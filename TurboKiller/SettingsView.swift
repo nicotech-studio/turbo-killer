@@ -158,7 +158,7 @@ private struct AboutSettingsView: View {
                     Link(
                         destination: URL(
                             string:
-                                "https://github.com/hello-nico-chan/turbo-killer"
+                                "https://github.com/nicotech-studio/turbo-killer"
                         )!
                     ) {
                         Label(
@@ -170,7 +170,7 @@ private struct AboutSettingsView: View {
                     Link(
                         destination: URL(
                             string:
-                                "https://github.com/hello-nico-chan/turbo-killer/issues/new"
+                                "https://github.com/nicotech-studio/turbo-killer/issues/new"
                         )!
                     ) {
                         Label(
@@ -229,7 +229,7 @@ private struct AboutSettingsView: View {
                         "License",
                         destination: URL(
                             string:
-                                "https://github.com/hello-nico-chan/turbo-killer/blob/main/LICENSE"
+                                "https://github.com/nicotech-studio/turbo-killer/blob/main/LICENSE"
                         )!
                     )
 
@@ -237,7 +237,7 @@ private struct AboutSettingsView: View {
                         "Third-Party Notices",
                         destination: URL(
                             string:
-                                "https://github.com/hello-nico-chan/turbo-killer/blob/main/THIRD_PARTY_NOTICES.md"
+                                "https://github.com/nicotech-studio/turbo-killer/blob/main/THIRD_PARTY_NOTICES.md"
                         )!
                     )
                 }
@@ -356,7 +356,7 @@ private struct AboutSettingsView: View {
             Launch at Login: \(launchAtLoginStatus)
             Privileged Helper: \(helperStatus)
             Turbo Boost: \(turboBoostStatus)
-            Official Project: https://github.com/hello-nico-chan/turbo-killer
+            Official Project: https://github.com/nicotech-studio/turbo-killer
             """
 
             let pasteboard = NSPasteboard.general

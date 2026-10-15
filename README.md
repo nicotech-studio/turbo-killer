@@ -2,11 +2,11 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
-[![Latest release](https://img.shields.io/github/v/release/hello-nico-chan/turbo-killer?display_name=tag&sort=semver&style=flat-square)](https://github.com/hello-nico-chan/turbo-killer/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/hello-nico-chan/turbo-killer/total?style=flat-square)](https://github.com/hello-nico-chan/turbo-killer/releases)
+[![Latest release](https://img.shields.io/github/v/release/nicotech-studio/turbo-killer?display_name=tag&sort=semver&style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/nicotech-studio/turbo-killer/total?style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases)
 ![macOS 13+](https://img.shields.io/badge/macOS-13%2B-000000?style=flat-square&logo=apple&logoColor=white)
 ![Intel Mac](https://img.shields.io/badge/Mac-Intel-0071C5?style=flat-square&logo=intel&logoColor=white)
-[![GPL-2.0](https://img.shields.io/github/license/hello-nico-chan/turbo-killer?style=flat-square)](LICENSE)
+[![GPL-2.0](https://img.shields.io/github/license/nicotech-studio/turbo-killer?style=flat-square)](LICENSE)
 
 TurboKiller is a free and open-source macOS menu bar utility for controlling Intel Turbo Boost on compatible Intel Macs.
 
@@ -101,7 +101,7 @@ If you try TurboKiller on another Intel Mac, a compatibility report is welcome �
 
 The canonical source for official TurboKiller releases is this repository:
 
-`https://github.com/hello-nico-chan/turbo-killer`
+`https://github.com/nicotech-studio/turbo-killer`
 
 Official release builds are signed with the NicoTech Studio Developer ID.
 

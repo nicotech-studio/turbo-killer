@@ -2,11 +2,11 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
-[![最新版本](https://img.shields.io/github/v/release/hello-nico-chan/turbo-killer?display_name=tag&sort=semver&style=flat-square)](https://github.com/hello-nico-chan/turbo-killer/releases/latest)
-[![下載次數](https://img.shields.io/github/downloads/hello-nico-chan/turbo-killer/total?style=flat-square)](https://github.com/hello-nico-chan/turbo-killer/releases)
+[![最新版本](https://img.shields.io/github/v/release/nicotech-studio/turbo-killer?display_name=tag&sort=semver&style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases/latest)
+[![下載次數](https://img.shields.io/github/downloads/nicotech-studio/turbo-killer/total?style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases)
 ![macOS 13+](https://img.shields.io/badge/macOS-13%2B-000000?style=flat-square&logo=apple&logoColor=white)
 ![Intel Mac](https://img.shields.io/badge/Mac-Intel-0071C5?style=flat-square&logo=intel&logoColor=white)
-[![GPL-2.0](https://img.shields.io/github/license/hello-nico-chan/turbo-killer?style=flat-square)](LICENSE)
+[![GPL-2.0](https://img.shields.io/github/license/nicotech-studio/turbo-killer?style=flat-square)](LICENSE)
 
 TurboKiller 是一款免費、開源的 macOS 選單列工具，用於在相容的 Intel Mac 上控制 Intel Turbo Boost。
 
@@ -101,7 +101,7 @@ TurboKiller 使用 Apple 已棄用的 Legacy Kernel Extension 相容機制。
 
 TurboKiller 官方發行版的權威來源為本儲存庫：
 
-`https://github.com/hello-nico-chan/turbo-killer`
+`https://github.com/nicotech-studio/turbo-killer`
 
 官方發行版使用 NicoTech Studio 的 Developer ID 簽署。
 
