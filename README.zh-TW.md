@@ -8,113 +8,57 @@
 ![Intel Mac](https://img.shields.io/badge/Mac-Intel-0071C5?style=flat-square&logo=intel&logoColor=white)
 [![GPL-2.0](https://img.shields.io/github/license/nicotech-studio/turbo-killer?style=flat-square)](LICENSE)
 
-TurboKiller 是一款免費、開源的 macOS 選單列工具，用於在相容的 Intel Mac 上控制 Intel Turbo Boost。
+TurboKiller 是一款適用於 Intel Mac 的免費開源選單列工具。
 
-它可以停用 Turbo Boost 以降低 CPU 溫度與風扇噪音，並在需要完整效能時隨時恢復。
+希望電腦更安靜、溫度更低時，關閉 Turbo Boost；需要完整效能時，再一鍵恢復。關閉後，較繁重工作的執行速度可能下降。
 
-> **實驗階段：** Legacy Kext 後端已在一台開啟系統完整性保護（SIP）的 Intel Mac 上成功載入，但另一台 Intel Mac 出現了 `Bad code signature`（程式碼簽署無效）錯誤，相容性差異正在調查。這不代表在其他 Mac 上首次安裝也能成功。暫不保證硬體與 macOS 版本相容性。
->
-> 歡迎協助測試及提供診斷資訊。回報問題時，請附上 Mac 型號、macOS 版本與完整錯誤訊息。
->
-> TurboKiller 主程式與特權 Helper 均使用 Developer ID 簽署。但由於目前版本包含一份歷史遺留的未簽署核心延伸模組，Apple 公證服務會拒絕該元件，因此目前版本無法完成 Apple notarization。
+## 下載與系統需求
 
-## 系統需求
+[下載最新版本](https://github.com/nicotech-studio/turbo-killer/releases/latest) · [官網](https://turbokiller.nicotech.cc)
 
-- Intel Mac
-- macOS 13 或更新版本
-- 成功測試的機器開啟了 SIP；暫不保證其他 Mac 在開啟 SIP 時也能執行
+- Intel Mac，macOS 13 或更新版本。不支援 Apple 晶片。
+- 無需關閉系統完整性保護（SIP）。
+- 目前仍處於實驗階段，已在部分 Intel Mac 上驗證，不保證所有組態相容。
 
-## 運作方式
+## 安裝
 
-TurboKiller 內建一份固定版本的歷史 `DisableTurboBoost.64bits.kext`。
+1. 開啟下載的 DMG，將 TurboKiller 拖入「應用程式」。
+2. 開啟 TurboKiller。如被 macOS 阻擋，前往 **系統設定 → 隱私權與安全性 → 仍要開啟**。
+3. 如有提示，在 **一般 → 登入項目與擴充功能** 中允許 TurboKiller 在背景執行。
+4. 如系統還要求核准擴充功能或重新啟動，請依提示操作。
 
-應用程式透過 `SMAppService` 註冊具有管理員權限的 LaunchDaemon，並透過 XPC 與其通訊。主程式與 Helper 雙方都會驗證對方的程式碼簽署身分。
+更新時，先退出舊 App，再替換「應用程式」中的副本。
 
-具有 root 權限的 Helper 會：
+## 使用
 
-- 使用固定的 SHA-256 驗證內建 Kext；
-- 將其安裝至 `/Library/Application Support/TurboKiller`；
-- 將安裝後的 Kext 擁有者設定為 `root:wheel`；
-- 載入 Kext 以停用 Turbo Boost；
-- 卸載 Kext 以恢復 Turbo Boost。
+- 希望降低發熱和風扇噪音時，在選單列選擇 **關閉 Turbo Boost**。
+- 需要完整效能時，選擇 **恢復 Turbo Boost**。
+- 操作後確認介面狀態。如有錯誤，不要連續點擊開關。
 
-Turbo Boost 的目前狀態會透過 `kmutil` 查詢實際載入的 Kext 狀態，而不是只依賴 UI 中的本地狀態。
+App 和背景元件已使用 Developer ID 簽署，但目前版本 **未通過 Apple 公證**。請僅從官方儲存庫下載，並保持 SIP 開啟。
 
-## 首次執行
+## 1.1.1 更新
 
-由於目前版本未通過 Apple 公證，macOS 第一次開啟 TurboKiller 時可能會阻止執行。
+修復部分 Intel Mac 無法正常控制 Turbo Boost 的問題，完善所需元件的檢查和更新處理。修復已在受影響電腦上通過關閉與恢復測試。
 
-如果發生這種情況：
+[版本說明](docs/releases/1.1.1.md)
 
-1. 開啟 **系統設定 → 隱私權與安全性**。
-2. 找到關於 TurboKiller 被阻止的提示。
-3. 點擊 **仍要開啟** 並確認。
+## 問題回報
 
-之後 macOS 仍可能分別要求允許：
+如無法使用，請在 [Issues](https://github.com/nicotech-studio/turbo-killer/issues) 提供 Mac 型號、macOS 版本及完整錯誤訊息或截圖。也歡迎分享成功運作的組態。
 
-1. TurboKiller 的背景特權 Helper：請在 **系統設定 → 一般 → 登入項目與擴充功能 → 允許 TurboKiller 在背景執行** 中批准；
-2. Legacy Turbo Boost 核心延伸模組。
+## 開發者說明
 
-允許核心延伸模組後，系統可能要求重新啟動一次。
+應用程式使用 SwiftUI，透過 XPC 與具有管理員權限的背景 Helper 通訊。Helper 載入或卸載內建的歷史核心延伸模組來控制 Turbo Boost；介面讀取系統中的實際載入狀態，並對完整套件進行 SHA-256 驗證。
 
-在相容且 Kext 已獲允許、能夠成功載入的系統上，日常切換的設計目標是不重複要求管理員密碼或重新啟動。僅允許背景 Helper 並不能解決 Kext 簽署錯誤。
-
-## 安全設計
-
-TurboKiller 刻意將特權介面限制在最小範圍。
-
-Helper 不提供任意 Shell 指令執行或任意 MSR 存取能力，只提供準備、載入和卸載固定 Turbo Boost Kext 所需的操作。
-
-主程式與 Helper 會透過程式碼簽署要求互相驗證身分。
-
-執行特權安裝前，內建 Kext 的執行檔也會再次進行 SHA-256 驗證。
-
-## 專案結構
-
-`TurboKiller/`
-: 選單列應用程式、UI、狀態管理、Turbo Boost 控制器以及 Helper 用戶端。
-
-`TurboKillerHelper/`
-: 以 root 權限執行的 LaunchDaemon，負責 Kext 安裝、載入與卸載。
-
-`TurboKillerHelperProtocol.swift`
-: 主程式與 Helper 共用的 XPC 介面。
-
-`TurboKiller/Resources/DisableTurboBoost.64bits.kext`
-: 目前後端使用的固定歷史版本 Turbo Boost Kext。
-
-## 建置
-
-使用 Xcode 開啟 `TurboKiller.xcodeproj`，建置 `TurboKiller` target。
-
-內建的歷史 Kext 必須保持位元組級完全不變。請勿重新編譯、修改或重新簽署。
-
-## 相容性
-
-TurboKiller 使用 Apple 已棄用的 Legacy Kernel Extension 相容機制。
-
-因此無法保證所有 Intel CPU 型號以及未來所有 macOS 版本都能持續相容。
-
-如果你在其他 Intel Mac 上嘗試了 TurboKiller，歡迎提交相容性回報——成功運作的回報同樣很有價值。
-
-## 官方發行版
-
-TurboKiller 官方發行版的權威來源為本儲存庫：
-
-`https://github.com/nicotech-studio/turbo-killer`
-
-官方發行版使用 NicoTech Studio 的 Developer ID 簽署。
-
-依照 GPLv2，任何人都可以 Fork、修改及重新散布本專案，但修改後的版本應清楚標示為修改版，不應讓使用者誤以為它是 TurboKiller 官方發行版。
+使用 Xcode 開啟 `TurboKiller.xcodeproj` 即可建置。歷史套件應保持原樣；所需檔案、測試與打包注意事項見[完整性維護文件](docs/kext-integrity.md)。
 
 ## 支持
 
-如果 TurboKiller 對你有幫助，並且你願意支持後續開發：
+如果 TurboKiller 對你有幫助，可以支持後續開發：
 
 <a href="https://ko-fi.com/hello_nico_chan"><img src="https://storage.ko-fi.com/cdn/kofi3.png?v=3" height="36" alt="在 Ko-fi 上支持我"></a>
 
 ## 授權條款
 
-TurboKiller 依 GNU General Public License version 2 發佈。
-
-專案授權條款請參閱 `LICENSE`，內建第三方元件的來源與授權資訊請參閱 `THIRD_PARTY_NOTICES.md`。
+[GPL-2.0](LICENSE)。內建元件的來源與授權見[第三方聲明](THIRD_PARTY_NOTICES.md)。修改後的版本應明確標示，不應讓使用者誤以為是官方發行版。

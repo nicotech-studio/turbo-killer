@@ -4,7 +4,6 @@
 //
 
 import Foundation
-import CryptoKit
 
 enum TurboBoostStatus: Equatable {
     case unavailable
@@ -91,10 +90,6 @@ struct LegacyKextTurboBoostController: TurboBoostControlling {
 
     private static let kextName =
         "DisableTurboBoost.64bits.kext"
-
-    /// Exact SHA-256 of the known working historical binary.
-    private static let expectedExecutableSHA256 =
-        "f81f003ccd5827122a41c39bddb78e4ffff37d84718a647dbd5fc3c6a92f987c"
 
     func currentStatus() async throws -> TurboBoostStatus {
 #if arch(x86_64)
@@ -183,9 +178,9 @@ struct LegacyKextTurboBoostController: TurboBoostControlling {
                 .bundledKextMissing
         }
 
-        try verifyExecutableHash(
-            kextURL: resourceURL
-        )
+        guard LegacyKextIntegrity.isValid(at: resourceURL) else {
+            throw TurboBoostControlError.bundledKextModified
+        }
 
         let result =
             try await TurboKillerHelperClient
@@ -237,34 +232,6 @@ struct LegacyKextTurboBoostController: TurboBoostControlling {
         }
     }
     
-    // MARK: - Hash verification
-
-    private static func verifyExecutableHash(
-        kextURL: URL
-    ) throws {
-        let hash = try executableHash(kextURL: kextURL)
-
-        guard hash == expectedExecutableSHA256 else {
-            throw TurboBoostControlError.bundledKextModified
-        }
-    }
-
-    private static func executableHash(
-        kextURL: URL
-    ) throws -> String {
-        let executableURL = kextURL
-            .appendingPathComponent("Contents")
-            .appendingPathComponent("MacOS")
-            .appendingPathComponent("DisableTurboBoost")
-
-        let data = try Data(contentsOf: executableURL)
-
-        return SHA256
-            .hash(data: data)
-            .map { String(format: "%02x", $0) }
-            .joined()
-    }
-
     // MARK: - Process execution
 
     private struct CommandResult {

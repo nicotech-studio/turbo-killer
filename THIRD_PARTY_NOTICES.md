@@ -56,6 +56,9 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 ## Provenance
 
-TurboKiller pins the historical bundled executable by SHA-256.
+TurboKiller pins every file in the historical bundle by SHA-256, including
+`Contents/Info.plist~`. That original backup-style file must be preserved because
+it affects the bundle's historical signature-exception hash. See
+[bundle integrity](docs/kext-integrity.md) for all pinned hashes.
 
 The upstream projects above are referenced for provenance and licensing. TurboKiller does not claim that rebuilding current upstream source will reproduce the bundled historical binary byte-for-byte.

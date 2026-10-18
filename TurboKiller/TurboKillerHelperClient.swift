@@ -55,11 +55,19 @@ struct TurboKillerHelperClient {
     static func healthCheck() async throws
         -> TurboKillerHelperCommandResult
     {
-        try await perform { proxy, reply in
+        let result = try await perform { proxy, reply in
             proxy.healthCheck(
                 withReply: reply
             )
         }
+
+        guard result.status == 0,
+              result.output == TurboKillerHelperCompatibility.version else {
+            // prepareHelper() already repairs and re-registers when a health
+            // check fails. A running old helper must not skip Kext migration.
+            throw TurboKillerHelperClientError.proxyUnavailable
+        }
+        return result
     }
 
     static func prepareTurboBoostKext() async throws

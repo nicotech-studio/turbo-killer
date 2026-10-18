@@ -1,4 +1,3 @@
-import CryptoKit
 import Darwin
 import Foundation
 import os
@@ -8,9 +7,6 @@ private let machServiceName =
 
 private let installedKextPath =
     "/Library/Application Support/TurboKiller/DisableTurboBoost.64bits.kext"
-
-private let expectedExecutableSHA256 =
-    "f81f003ccd5827122a41c39bddb78e4ffff37d84718a647dbd5fc3c6a92f987c"
 
 private let appCodeSigningRequirement =
     #"identifier "cc.nicotech.TurboKiller" and anchor apple generic and certificate leaf[subject.OU] = "PPXL64QJ2V""#
@@ -27,7 +23,7 @@ final class TurboKillerHelperService:
     func healthCheck(
         withReply reply: @escaping (NSNumber, String) -> Void
     ) {
-        reply(NSNumber(value: 0), "")
+        reply(NSNumber(value: 0), TurboKillerHelperCompatibility.version)
     }
     
     func prepareTurboBoostKext(
@@ -53,10 +49,7 @@ final class TurboKillerHelperService:
                 return
             }
 
-            guard
-                try executableHash(kextURL: sourceURL)
-                    == expectedExecutableSHA256
-            else {
+            guard LegacyKextIntegrity.isValid(at: sourceURL) else {
                 reply(
                     NSNumber(value: -1),
                     "The bundled Turbo Boost kernel extension failed integrity verification."
@@ -68,8 +61,7 @@ final class TurboKillerHelperService:
                 FileManager.default.fileExists(
                     atPath: destinationURL.path
                 ),
-                try executableHash(kextURL: destinationURL)
-                    == expectedExecutableSHA256,
+                LegacyKextIntegrity.isValid(at: destinationURL),
                 hasRootOwnership(destinationURL)
             {
                 reply(NSNumber(value: 0), "")
@@ -125,10 +117,7 @@ final class TurboKillerHelperService:
                 return
             }
 
-            guard
-                try executableHash(kextURL: destinationURL)
-                    == expectedExecutableSHA256
-            else {
+            guard LegacyKextIntegrity.isValid(at: destinationURL) else {
                 reply(
                     NSNumber(value: -1),
                     "The installed Turbo Boost kernel extension failed integrity verification."
@@ -152,6 +141,18 @@ final class TurboKillerHelperService:
         withReply reply: @escaping (NSNumber, String) -> Void
     ) {
         logger.log("Loading Turbo Boost kext")
+
+        // Recheck at the privileged load boundary, even if preparation was
+        // skipped by the caller or the installation changed since preparation.
+        let installedURL = URL(fileURLWithPath: installedKextPath)
+        guard LegacyKextIntegrity.isValid(at: installedURL),
+              hasRootOwnership(installedURL) else {
+            reply(
+                NSNumber(value: -1),
+                "The installed Turbo Boost kernel extension failed integrity verification."
+            )
+            return
+        }
 
         let result = run(
             executable: "/usr/bin/kextutil",
@@ -235,22 +236,6 @@ final class TurboKillerHelperService:
         )
     }
     
-    private func executableHash(
-        kextURL: URL
-    ) throws -> String {
-        let executableURL = kextURL
-            .appendingPathComponent("Contents")
-            .appendingPathComponent("MacOS")
-            .appendingPathComponent("DisableTurboBoost")
-
-        let data = try Data(contentsOf: executableURL)
-
-        return SHA256
-            .hash(data: data)
-            .map { String(format: "%02x", $0) }
-            .joined()
-    }
-
     private func hasRootOwnership(
         _ url: URL
     ) -> Bool {

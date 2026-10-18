@@ -8,113 +8,57 @@
 ![Intel Mac](https://img.shields.io/badge/Mac-Intel-0071C5?style=flat-square&logo=intel&logoColor=white)
 [![GPL-2.0](https://img.shields.io/github/license/nicotech-studio/turbo-killer?style=flat-square)](LICENSE)
 
-TurboKiller는 호환되는 Intel Mac에서 Intel Turbo Boost를 제어하기 위한 무료 오픈 소스 macOS 메뉴 막대 유틸리티입니다.
+TurboKiller는 Intel Mac용 무료 오픈 소스 메뉴 막대 앱입니다.
 
-Turbo Boost를 비활성화해 CPU 온도와 팬 소음을 낮추고, 최대 성능이 필요할 때는 언제든 다시 활성화할 수 있습니다.
+더 조용하고 발열이 적은 환경을 원할 때 Turbo Boost를 끄고, 최대 성능이 필요하면 다시 켤 수 있습니다. 끄면 부하가 큰 작업의 처리 속도가 낮아질 수 있습니다.
 
-> **실험 단계:** Legacy Kext 백엔드는 System Integrity Protection(SIP)이 활성화된 Intel Mac 한 대에서 로드에 성공했습니다. 다른 Intel Mac에서는 `Bad code signature`(잘못된 코드 서명) 오류가 발생했으며, 호환성 차이를 조사하고 있습니다. 다른 Mac에서도 최초 설치가 성공한다는 의미는 아닙니다. 하드웨어 및 macOS 버전과의 호환성은 보장되지 않습니다.
->
-> 테스트 참여와 진단 정보 제공을 환영합니다. 문제를 보고할 때는 Mac 모델, macOS 버전, 전체 오류 메시지를 포함해 주세요.
->
-> TurboKiller 본체와 권한이 있는 Helper는 Developer ID로 서명되어 있습니다. 다만 현재 릴리스에는 과거의 서명되지 않은 커널 확장이 포함되어 있으며, Apple 공증 서비스가 이 구성 요소를 거부하기 때문에 현재 릴리스는 Apple notarization을 완료할 수 없습니다.
+## 다운로드 및 시스템 요구 사항
 
-## 요구 사항
+[최신 버전 다운로드](https://github.com/nicotech-studio/turbo-killer/releases/latest) · [공식 사이트](https://turbokiller.nicotech.cc)
 
-- Intel Mac
-- macOS 13 이상
-- 로드에 성공한 테스트 기기에서는 SIP가 활성화되어 있었습니다. 다른 Mac에서도 SIP가 활성화된 상태로 작동한다는 보장은 없습니다
+- Intel Mac, macOS 13 이상. Apple Silicon은 지원하지 않습니다.
+- 시스템 무결성 보호(SIP)를 비활성화할 필요가 없습니다.
+- 아직 실험 단계입니다. 일부 Intel Mac에서 검증했지만 모든 구성의 호환성을 보장하지는 않습니다.
 
-## 작동 방식
+## 설치
 
-TurboKiller에는 고정된 과거 버전의 `DisableTurboBoost.64bits.kext`가 포함되어 있습니다.
+1. 다운로드한 DMG를 열고 TurboKiller를 응용 프로그램으로 드래그합니다.
+2. TurboKiller를 실행합니다. macOS가 차단하면 **시스템 설정 → 개인정보 보호 및 보안 → 그래도 열기**를 선택합니다.
+3. 요청되면 **일반 → 로그인 항목 및 확장 프로그램**에서 백그라운드 실행을 허용합니다.
+4. 확장 프로그램 승인이나 재시동을 요청하면 시스템 안내를 따릅니다.
 
-앱은 `SMAppService`를 사용해 권한이 있는 LaunchDaemon을 등록하고 XPC를 통해 통신합니다. 앱과 Helper 양쪽 모두 코드 서명 요구 사항을 사용하여 상대방의 신원을 검증합니다.
+업데이트할 때는 이전 App을 종료한 뒤 응용 프로그램의 복사본을 교체하세요.
 
-root 권한으로 실행되는 Helper는 다음 작업을 수행합니다.
+## 사용
 
-- 포함된 Kext 실행 파일을 고정된 SHA-256 해시와 비교
-- `/Library/Application Support/TurboKiller`에 설치
-- 설치된 Kext의 소유권을 `root:wheel`로 설정
-- Kext를 로드하여 Turbo Boost 비활성화
-- Kext를 언로드하여 Turbo Boost 복원
+- 발열과 팬 소음을 줄이고 싶으면 메뉴 막대에서 **Turbo Boost 비활성화**를 선택합니다.
+- 최대 성능이 필요하면 **Turbo Boost 복원**을 선택합니다.
+- 작업 후 표시 상태를 확인하세요. 오류가 나면 스위치를 연속으로 누르지 마세요.
 
-현재 Turbo Boost 상태는 UI 내부 상태가 아니라 `kmutil`을 이용해 실제로 로드된 Kext 상태를 확인하여 판단합니다.
+App과 백그라운드 구성 요소는 Developer ID로 서명되어 있지만 현재 버전은 **Apple 공증을 받지 않았습니다**. 공식 저장소에서만 다운로드하고 SIP는 활성화 상태로 유지하세요.
 
-## 최초 실행
+## 1.1.1 변경 사항
 
-현재 릴리스는 Apple 공증을 받지 않았기 때문에 처음 실행할 때 macOS가 TurboKiller를 차단할 수 있습니다.
+일부 Intel Mac에서 Turbo Boost를 제어하지 못하던 문제를 수정하고, 필요한 구성 요소의 검증 및 업데이트 처리를 개선했습니다. 해당 Mac에서 비활성화와 복원을 확인했습니다.
 
-이 경우:
+[릴리스 노트](docs/releases/1.1.1.md)
 
-1. **시스템 설정 → 개인정보 보호 및 보안**을 엽니다.
-2. TurboKiller가 차단되었다는 메시지를 찾습니다.
-3. **그래도 열기**를 클릭하고 확인합니다.
+## 피드백
 
-그 후 macOS가 다음 구성 요소에 대해 별도로 승인을 요구할 수 있습니다.
+작동하지 않으면 Mac 모델, macOS 버전, 전체 오류 메시지 또는 스크린샷과 함께 [Issues](https://github.com/nicotech-studio/turbo-killer/issues)에 알려 주세요. 정상 작동한 구성에 대한 보고도 환영합니다.
 
-1. TurboKiller의 권한 있는 백그라운드 Helper. **시스템 설정 → 일반 → 로그인 항목 및 확장 프로그램 → TurboKiller 백그라운드 실행 허용**에서 승인합니다
-2. Legacy Turbo Boost 커널 확장
+## 개발자 안내
 
-커널 확장을 승인한 뒤 한 번 재시작해야 할 수 있습니다.
+SwiftUI App은 XPC로 권한이 있는 백그라운드 Helper와 통신합니다. Helper는 포함된 과거 커널 확장을 로드하거나 언로드하여 Turbo Boost를 제어합니다. 표시는 시스템의 실제 로드 상태에 기반하며 전체 확장 번들을 SHA-256으로 검증합니다.
 
-호환성이 있고 Kext가 승인되어 정상적으로 로드되는 시스템에서는 일반적인 전환 시 관리자 암호 입력이나 재시작을 반복해서 요구하지 않도록 설계되었습니다. 백그라운드 Helper 승인만으로는 Kext 서명 오류를 해결할 수 없습니다.
+Xcode에서 `TurboKiller.xcodeproj`를 열어 빌드합니다. 포함된 과거 확장 번들은 변경하지 마세요. 필수 파일, 테스트 및 패키징 방법은 [무결성 유지보수 문서](docs/kext-integrity.md)를 참조하세요.
 
-## 보안
+## 지원
 
-TurboKiller는 권한 인터페이스를 의도적으로 최소화했습니다.
-
-Helper는 임의의 Shell 명령 실행이나 임의의 MSR 접근 기능을 제공하지 않으며, 고정된 Turbo Boost Kext를 준비하고 로드하거나 언로드하는 데 필요한 작업만 제공합니다.
-
-앱과 Helper는 코드 서명 요구 사항을 이용해 서로를 인증합니다.
-
-권한이 필요한 설치를 수행하기 전에 포함된 Kext 실행 파일을 SHA-256으로 다시 검증합니다.
-
-## 프로젝트 구조
-
-`TurboKiller/`
-: 메뉴 막대 앱, UI, 상태 모델, Turbo Boost 컨트롤러 및 Helper 클라이언트.
-
-`TurboKillerHelper/`
-: root 권한으로 실행되며 Kext 설치, 로드 및 언로드를 담당하는 LaunchDaemon.
-
-`TurboKillerHelperProtocol.swift`
-: 앱과 Helper가 공유하는 XPC 인터페이스.
-
-`TurboKiller/Resources/DisableTurboBoost.64bits.kext`
-: 현재 백엔드가 사용하는 고정된 과거 Turbo Boost Kext.
-
-## 빌드
-
-Xcode에서 `TurboKiller.xcodeproj`를 열고 `TurboKiller` target을 빌드합니다.
-
-포함된 과거 Kext는 바이트 단위로 그대로 유지되어야 합니다. 다시 빌드하거나 수정하거나 재서명하지 마십시오.
-
-## 호환성
-
-TurboKiller는 Apple이 더 이상 권장하지 않는 Legacy Kernel Extension 호환 경로에 의존합니다.
-
-따라서 모든 Intel CPU 계열이나 향후 모든 macOS 버전에서의 동작을 보장할 수 없습니다.
-
-다른 Intel Mac에서 TurboKiller를 사용해 보았다면 호환성 보고를 환영합니다. 정상적으로 작동한 보고도 똑같이 유용합니다.
-
-## 공식 릴리스
-
-TurboKiller 공식 릴리스의 정식 배포처는 이 저장소입니다.
-
-`https://github.com/nicotech-studio/turbo-killer`
-
-공식 릴리스는 NicoTech Studio의 Developer ID로 서명됩니다.
-
-GPLv2에 따라 Fork, 수정 및 재배포할 수 있지만, 수정된 빌드는 수정 버전임을 명확히 표시하고 TurboKiller의 공식 릴리스인 것처럼 오해하게 해서는 안 됩니다.
-
-## 후원
-
-TurboKiller가 도움이 되었고 향후 개발을 지원하고 싶다면:
+TurboKiller가 도움이 되었다면 개발을 지원할 수 있습니다:
 
 <a href="https://ko-fi.com/hello_nico_chan"><img src="https://storage.ko-fi.com/cdn/kofi3.png?v=3" height="36" alt="Ko-fi에서 후원하기"></a>
 
 ## 라이선스
 
-TurboKiller는 GNU General Public License version 2로 배포됩니다.
-
-프로젝트 라이선스는 `LICENSE`, 포함된 제3자 구성 요소의 출처 및 라이선스 정보는 `THIRD_PARTY_NOTICES.md`를 참고하십시오.
+[GPL-2.0](LICENSE). 포함된 구성 요소의 출처와 라이선스는 [서드 파티 고지](THIRD_PARTY_NOTICES.md)를 참조하세요. 수정 빌드는 수정본임을 명시하고 공식 릴리스로 오인되지 않도록 해야 합니다.

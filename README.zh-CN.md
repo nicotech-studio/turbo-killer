@@ -8,113 +8,57 @@
 ![Intel Mac](https://img.shields.io/badge/Mac-Intel-0071C5?style=flat-square&logo=intel&logoColor=white)
 [![GPL-2.0](https://img.shields.io/github/license/nicotech-studio/turbo-killer?style=flat-square)](LICENSE)
 
-TurboKiller 是一款免费、开源的 macOS 菜单栏工具，用于在兼容的 Intel Mac 上控制 Intel Turbo Boost。
+TurboKiller 是一款面向 Intel Mac 的免费开源菜单栏工具。
 
-它可以关闭 Turbo Boost 以降低 CPU 温度和风扇噪音，并在需要完整性能时随时恢复。
+希望电脑更安静、温度更低时，关闭 Turbo Boost；需要完整性能时，再一键恢复。关闭后，较重任务的运行速度可能下降。
 
-> **实验阶段：** Legacy Kext 后端已在一台开启系统完整性保护（SIP）的 Intel Mac 上成功加载，但另一台 Intel Mac 出现了 `Bad code signature`（代码签名无效）错误，兼容性差异正在排查。这不代表在其他 Mac 上首次安装也能成功。暂不保证硬件与 macOS 版本兼容性。
->
-> 欢迎协助测试和提交诊断信息。报告问题时，请提供 Mac 型号、macOS 版本和完整报错。
->
-> TurboKiller 主程序和特权 Helper 均使用 Developer ID 签名。但由于当前版本包含一份历史遗留的未签名内核扩展，Apple 公证服务会拒绝该组件，因此当前版本无法完成 Apple notarization。
+## 下载与系统要求
 
-## 系统要求
+[下载最新版本](https://github.com/nicotech-studio/turbo-killer/releases/latest) · [官网](https://turbokiller.nicotech.cc)
 
-- Intel Mac
-- macOS 13 或更高版本
-- 成功测试的机器开启了 SIP；暂不保证其他 Mac 在开启 SIP 时也能运行
+- Intel Mac，macOS 13 或更高版本。不支持 Apple 芯片。
+- 无需关闭系统完整性保护（SIP）。
+- 目前仍处于实验阶段，已在部分 Intel Mac 上验证，不保证所有配置兼容。
 
-## 工作原理
+## 安装
 
-TurboKiller 内置了一份固定版本的历史 `DisableTurboBoost.64bits.kext`。
+1. 打开下载的 DMG，将 TurboKiller 拖入“应用程序”。
+2. 打开 TurboKiller。如被 macOS 拦截，前往 **系统设置 → 隐私与安全性 → 仍要打开**。
+3. 如有提示，在 **通用 → 登录项与扩展** 中允许 TurboKiller 在后台运行。
+4. 如系统还要求批准扩展或重启，请按提示操作。
 
-应用通过 `SMAppService` 注册一个具有管理员权限的 LaunchDaemon，并通过 XPC 与它通信。主程序和 Helper 双方都会验证对方的代码签名身份。
+升级时，先退出旧 App，再替换“应用程序”中的副本。
 
-具有 root 权限的 Helper 会：
+## 使用
 
-- 使用固定的 SHA-256 校验内置 Kext；
-- 将其安装到 `/Library/Application Support/TurboKiller`；
-- 将安装后的 Kext 权限设置为 `root:wheel`；
-- 加载 Kext 以关闭 Turbo Boost；
-- 卸载 Kext 以恢复 Turbo Boost。
+- 希望降低发热和风扇噪音时，在菜单栏选择 **关闭 Turbo Boost**。
+- 需要完整性能时，选择 **恢复 Turbo Boost**。
+- 操作后确认界面状态。如有报错，不要连续点击开关。
 
-Turbo Boost 的当前状态通过 `kmutil` 查询实际加载的 Kext 状态确定，而不是仅依赖界面中的本地状态。
+App 和后台组件已使用 Developer ID 签名，但当前版本 **未通过 Apple 公证**。请仅从官方仓库下载，并保持 SIP 开启。
 
-## 首次运行
+## 1.1.1 更新
 
-由于当前版本未通过 Apple 公证，macOS 第一次打开 TurboKiller 时可能会阻止运行。
+修复部分 Intel Mac 无法正常控制 Turbo Boost 的问题，完善所需组件的检查和升级处理。修复已在受影响电脑上通过关闭与恢复测试。
 
-如果发生这种情况：
+[版本说明](docs/releases/1.1.1.md)
 
-1. 打开 **系统设置 → 隐私与安全性**。
-2. 找到关于 TurboKiller 被阻止的提示。
-3. 点击 **仍要打开** 并确认。
+## 问题反馈
 
-之后 macOS 仍可能分别要求批准：
+如无法使用，请在 [Issues](https://github.com/nicotech-studio/turbo-killer/issues) 提供 Mac 型号、macOS 版本及完整报错或截图。也欢迎分享成功运行的配置。
 
-1. TurboKiller 的后台特权 Helper：请在 **系统设置 → 通用 → 登录项与扩展 → 允许 TurboKiller 在后台运行** 中批准；
-2. Legacy Turbo Boost 内核扩展。
+## 开发者说明
 
-批准内核扩展后，系统可能要求重启一次。
+应用使用 SwiftUI，通过 XPC 与具有管理员权限的后台 Helper 通信。Helper 加载或卸载内置的历史内核扩展来控制 Turbo Boost；界面读取系统中的实际加载状态，并对完整扩展包进行 SHA-256 校验。
 
-在兼容且 Kext 已获批准、能够成功加载的系统上，日常切换的设计目标是不重复要求管理员密码或重启。仅批准后台 Helper 并不能解决 Kext 签名错误。
-
-## 安全设计
-
-TurboKiller 有意将特权接口限制在最小范围。
-
-Helper 不提供执行任意 Shell 命令或访问任意 MSR 的能力，仅提供准备、加载和卸载固定 Turbo Boost Kext 所需的操作。
-
-主程序与 Helper 会通过代码签名要求互相验证身份。
-
-在进行特权安装前，内置 Kext 的可执行文件还会再次进行 SHA-256 校验。
-
-## 项目结构
-
-`TurboKiller/`
-: 菜单栏应用、UI、状态管理、Turbo Boost 控制器以及 Helper 客户端。
-
-`TurboKillerHelper/`
-: 以 root 权限运行的 LaunchDaemon，负责 Kext 安装、加载和卸载。
-
-`TurboKillerHelperProtocol.swift`
-: 主程序和 Helper 共用的 XPC 接口。
-
-`TurboKiller/Resources/DisableTurboBoost.64bits.kext`
-: 当前后端使用的固定历史版本 Turbo Boost Kext。
-
-## 构建
-
-使用 Xcode 打开 `TurboKiller.xcodeproj`，构建 `TurboKiller` target。
-
-内置的历史 Kext 必须保持字节级完全不变。不要重新编译、修改或重新签名它。
-
-## 兼容性
-
-TurboKiller 使用的是 Apple 已弃用的 Legacy Kernel Extension 兼容机制。
-
-因此无法保证所有 Intel CPU 型号以及未来所有 macOS 版本都能够继续兼容。
-
-如果你在其他 Intel Mac 上尝试了 TurboKiller，欢迎提交兼容性报告——成功运行的报告同样很有价值。
-
-## 官方发行版
-
-TurboKiller 官方发行版的权威来源为本仓库：
-
-`https://github.com/nicotech-studio/turbo-killer`
-
-官方发行版使用 NicoTech Studio 的 Developer ID 签名。
-
-根据 GPLv2，任何人都可以 Fork、修改和重新分发本项目，但修改后的版本应明确标识为修改版，不应让用户误以为它是 TurboKiller 官方发行版。
+使用 Xcode 打开 `TurboKiller.xcodeproj` 即可构建。历史扩展包应保持原样；所需文件、测试和打包注意事项见[完整性维护文档](docs/kext-integrity.md)。
 
 ## 支持
 
-如果 TurboKiller 对你有帮助，并且你愿意支持它的后续开发：
+如果 TurboKiller 对你有帮助，可以支持它的后续开发：
 
 <a href="https://ko-fi.com/hello_nico_chan"><img src="https://storage.ko-fi.com/cdn/kofi3.png?v=3" height="36" alt="在 Ko-fi 上支持我"></a>
 
 ## 许可证
 
-TurboKiller 使用 GNU General Public License version 2 发布。
-
-项目许可证请参阅 `LICENSE`，内置第三方组件的来源与许可证信息请参阅 `THIRD_PARTY_NOTICES.md`。
+[GPL-2.0](LICENSE)。内置组件的来源和授权见[第三方声明](THIRD_PARTY_NOTICES.md)。修改后的版本应明确标识，不应让用户误以为是官方发行版。
