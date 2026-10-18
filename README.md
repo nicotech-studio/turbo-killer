@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
 
 [![Latest release](https://img.shields.io/github/v/release/nicotech-studio/turbo-killer?display_name=tag&sort=semver&style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/nicotech-studio/turbo-killer/total?style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases)
@@ -37,11 +37,14 @@ To update, quit the old App before replacing it in Applications.
 
 The App and its background helper are Developer ID signed, but this release is **not Apple-notarized**. Download only from the official repository and keep SIP enabled.
 
-## What's new in 1.1.1
+## Release notes · 1.2.0
 
-Fixes a problem that prevented Turbo Boost control from working on some Intel Macs, and improves checks and upgrades of the required components. The fix has passed disable-and-restore testing on the affected Mac.
+- A fixed wind icon with a monochrome badge shows whether Turbo Boost is enabled, disabled, or its state is unknown.
+- A compact popover focuses on status and control. Unsupported Macs show an explanation instead; Settings and Quit remain available.
+- 17 localizations across the app, website, README and these notes, including Arabic and Hebrew with right-to-left layouts.
+- Status refreshes at launch, on wake, after operations and periodically in the background.
 
-[Release notes](docs/releases/1.1.1.md)
+[Release notes](docs/releases/1.2.0/en.md)
 
 ## Feedback
 
@@ -51,7 +54,7 @@ If it does not work on your Mac, [open an issue](https://github.com/nicotech-stu
 
 The SwiftUI menu bar App communicates with a privileged background helper over XPC. The helper loads or unloads a bundled legacy kernel extension to control Turbo Boost. The displayed state comes from the system's actual loaded-extension state, and the full extension bundle is checked with SHA-256.
 
-Open `TurboKiller.xcodeproj` in Xcode to build. Preserve the historical extension bundle unchanged; see [bundle integrity and tests](docs/kext-integrity.md) for the required files and packaging checks.
+Open `TurboKiller.xcodeproj` in Xcode to build. Preserve the historical extension bundle unchanged; see [bundle integrity and tests](LegacyKextIntegrity.swift) for the required files and packaging checks.
 
 ## Support
 

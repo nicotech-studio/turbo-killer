@@ -1,0 +1,104 @@
+[
+  {
+    "id": "en",
+    "app": "en",
+    "name": "English",
+    "direction": "ltr"
+  },
+  {
+    "id": "zh-CN",
+    "app": "zh-Hans",
+    "name": "简体中文",
+    "direction": "ltr"
+  },
+  {
+    "id": "zh-TW",
+    "app": "zh-Hant",
+    "name": "繁體中文",
+    "direction": "ltr"
+  },
+  {
+    "id": "ja",
+    "app": "ja",
+    "name": "日本語",
+    "direction": "ltr"
+  },
+  {
+    "id": "ko",
+    "app": "ko",
+    "name": "한국어",
+    "direction": "ltr"
+  },
+  {
+    "id": "de",
+    "app": "de",
+    "name": "Deutsch",
+    "direction": "ltr"
+  },
+  {
+    "id": "fr",
+    "app": "fr",
+    "name": "Français",
+    "direction": "ltr"
+  },
+  {
+    "id": "es",
+    "app": "es",
+    "name": "Español",
+    "direction": "ltr"
+  },
+  {
+    "id": "pt-BR",
+    "app": "pt-BR",
+    "name": "Português (Brasil)",
+    "direction": "ltr"
+  },
+  {
+    "id": "pt-PT",
+    "app": "pt-PT",
+    "name": "Português (Portugal)",
+    "direction": "ltr"
+  },
+  {
+    "id": "it",
+    "app": "it",
+    "name": "Italiano",
+    "direction": "ltr"
+  },
+  {
+    "id": "ru",
+    "app": "ru",
+    "name": "Русский",
+    "direction": "ltr"
+  },
+  {
+    "id": "tr",
+    "app": "tr",
+    "name": "Türkçe",
+    "direction": "ltr"
+  },
+  {
+    "id": "id",
+    "app": "id",
+    "name": "Bahasa Indonesia",
+    "direction": "ltr"
+  },
+  {
+    "id": "vi",
+    "app": "vi",
+    "name": "Tiếng Việt",
+    "direction": "ltr"
+  },
+  {
+    "id": "ar",
+    "app": "ar",
+    "name": "العربية",
+    "direction": "rtl"
+  },
+  {
+    "id": "he",
+    "app": "he",
+    "name": "עברית",
+    "direction": "rtl"
+  }
+]

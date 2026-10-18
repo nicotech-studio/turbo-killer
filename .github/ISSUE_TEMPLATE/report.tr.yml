@@ -1,0 +1,150 @@
+{
+  "name": "Türkçe",
+  "description": "Bir hata bildirin veya uyumluluk sonucunu paylaşın.",
+  "title": "[Report] ",
+  "body": [
+    {
+      "type": "dropdown",
+      "id": "report_type",
+      "attributes": {
+        "label": "Bildirim türü",
+        "options": [
+          "Hata",
+          "Uyumluluk"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "TurboKiller sürümü",
+        "placeholder": "1.2.0"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "mac",
+      "attributes": {
+        "label": "Mac modeli",
+        "placeholder": "MacBookPro16,1"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "cpu",
+      "attributes": {
+        "label": "CPU",
+        "placeholder": "Intel Core i7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "macos",
+      "attributes": {
+        "label": "macOS sürümü",
+        "placeholder": "macOS 15.7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "sip",
+      "attributes": {
+        "label": "Sistem Bütünlüğü Koruması (SIP)",
+        "options": [
+          "Açık",
+          "Kapalı",
+          "Bilmiyorum"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "compatibility_result",
+      "attributes": {
+        "label": "Uyumluluk",
+        "options": [
+          "Geçerli değil — hata",
+          "Çalışıyor",
+          "Kısmen çalışıyor",
+          "Çalışmıyor"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "Ayrıntılar ve beklenen davranış"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "Yeniden oluşturma adımları (varsa)"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "logs",
+      "attributes": {
+        "label": "Tam hata, günlükler veya ekran görüntüleri"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "checks",
+      "attributes": {
+        "label": "Kontroller",
+        "options": [
+          {
+            "label": "Bu bildirim bir Intel Mac hakkındadır.",
+            "required": true
+          },
+          {
+            "label": "Resmî sürümü veya bu depodan değiştirilmemiş bir derlemeyi denedim.",
+            "required": true
+          },
+          {
+            "label": "Aynı sorunla ilgili mevcut bildirimleri kontrol ettim.",
+            "required": true
+          }
+        ]
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "name": "Deutsch",
+  "description": "Melde einen Fehler oder teile ein Kompatibilitätsergebnis.",
+  "title": "[Report] ",
+  "body": [
+    {
+      "type": "dropdown",
+      "id": "report_type",
+      "attributes": {
+        "label": "Art der Meldung",
+        "options": [
+          "Fehlerbericht",
+          "Kompatibilitätsbericht"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "TurboKiller-Version",
+        "placeholder": "1.2.0"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "mac",
+      "attributes": {
+        "label": "Mac-Modell",
+        "placeholder": "MacBookPro16,1"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "cpu",
+      "attributes": {
+        "label": "CPU",
+        "placeholder": "Intel Core i7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "macos",
+      "attributes": {
+        "label": "macOS-Version",
+        "placeholder": "macOS 15.7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "sip",
+      "attributes": {
+        "label": "Systemintegritätsschutz (SIP)",
+        "options": [
+          "Aktiviert",
+          "Deaktiviert",
+          "Unbekannt"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "compatibility_result",
+      "attributes": {
+        "label": "Kompatibilität",
+        "options": [
+          "Nicht zutreffend — Fehlerbericht",
+          "Funktioniert",
+          "Funktioniert teilweise",
+          "Funktioniert nicht"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "Einzelheiten und erwartetes Verhalten"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "Schritte zum Reproduzieren (falls zutreffend)"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "logs",
+      "attributes": {
+        "label": "Vollständige Fehlermeldung, Protokolle oder Bildschirmfotos"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "checks",
+      "attributes": {
+        "label": "Prüfliste",
+        "options": [
+          {
+            "label": "Dieser Bericht betrifft einen Intel-Mac.",
+            "required": true
+          },
+          {
+            "label": "Ich habe die offizielle Version oder einen unveränderten Build aus diesem Repository getestet.",
+            "required": true
+          },
+          {
+            "label": "Ich habe vorhandene Meldungen auf dasselbe Problem geprüft.",
+            "required": true
+          }
+        ]
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

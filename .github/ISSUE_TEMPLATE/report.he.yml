@@ -1,0 +1,150 @@
+{
+  "name": "עברית",
+  "description": "דווחו על תקלה או שתפו תוצאת תאימות.",
+  "title": "[Report] ",
+  "body": [
+    {
+      "type": "dropdown",
+      "id": "report_type",
+      "attributes": {
+        "label": "סוג הדיווח",
+        "options": [
+          "תקלה",
+          "תאימות"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "גרסת TurboKiller",
+        "placeholder": "1.2.0"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "mac",
+      "attributes": {
+        "label": "דגם Mac",
+        "placeholder": "MacBookPro16,1"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "cpu",
+      "attributes": {
+        "label": "מעבד",
+        "placeholder": "Intel Core i7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "macos",
+      "attributes": {
+        "label": "גרסת macOS",
+        "placeholder": "macOS 15.7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "sip",
+      "attributes": {
+        "label": "הגנת שלמות המערכת (SIP)",
+        "options": [
+          "פעילה",
+          "כבויה",
+          "לא ידוע"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "compatibility_result",
+      "attributes": {
+        "label": "תאימות",
+        "options": [
+          "לא רלוונטי — תקלה",
+          "עובד",
+          "עובד חלקית",
+          "לא עובד"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "פרטים וההתנהגות הצפויה"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "צעדים לשחזור, אם רלוונטי"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "logs",
+      "attributes": {
+        "label": "השגיאה המלאה, יומנים או צילומי מסך"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "checks",
+      "attributes": {
+        "label": "בדיקות",
+        "options": [
+          {
+            "label": "הדיווח מתייחס ל-Mac עם Intel.",
+            "required": true
+          },
+          {
+            "label": "בדקתי את הגרסה הרשמית או בנייה ללא שינויים ממאגר זה.",
+            "required": true
+          },
+          {
+            "label": "בדקתי דיווחים קיימים על אותה בעיה.",
+            "required": true
+          }
+        ]
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

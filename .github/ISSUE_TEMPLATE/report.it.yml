@@ -1,0 +1,150 @@
+{
+  "name": "Italiano",
+  "description": "Segnala un bug o condividi un risultato di compatibilità.",
+  "title": "[Report] ",
+  "body": [
+    {
+      "type": "dropdown",
+      "id": "report_type",
+      "attributes": {
+        "label": "Tipo di segnalazione",
+        "options": [
+          "Bug",
+          "Compatibilità"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Versione di TurboKiller",
+        "placeholder": "1.2.0"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "mac",
+      "attributes": {
+        "label": "Modello di Mac",
+        "placeholder": "MacBookPro16,1"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "cpu",
+      "attributes": {
+        "label": "CPU",
+        "placeholder": "Intel Core i7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "macos",
+      "attributes": {
+        "label": "Versione di macOS",
+        "placeholder": "macOS 15.7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "sip",
+      "attributes": {
+        "label": "Protezione dell’integrità di sistema (SIP)",
+        "options": [
+          "Attiva",
+          "Disattiva",
+          "Non so"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "compatibility_result",
+      "attributes": {
+        "label": "Compatibilità",
+        "options": [
+          "Non applicabile — bug",
+          "Funziona",
+          "Funziona parzialmente",
+          "Non funziona"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "Dettagli e comportamento previsto"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "Passaggi per riprodurre (se applicabile)"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "logs",
+      "attributes": {
+        "label": "Errore completo, registri o schermate"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "checks",
+      "attributes": {
+        "label": "Verifiche",
+        "options": [
+          {
+            "label": "La segnalazione riguarda un Mac Intel.",
+            "required": true
+          },
+          {
+            "label": "Ho provato la versione ufficiale o una compilazione non modificata di questo repository.",
+            "required": true
+          },
+          {
+            "label": "Ho controllato le segnalazioni esistenti sullo stesso problema.",
+            "required": true
+          }
+        ]
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

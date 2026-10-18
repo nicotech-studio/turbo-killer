@@ -1,0 +1,150 @@
+{
+  "name": "العربية",
+  "description": "أبلغ عن خطأ أو شارك نتيجة التوافق.",
+  "title": "[Report] ",
+  "body": [
+    {
+      "type": "dropdown",
+      "id": "report_type",
+      "attributes": {
+        "label": "نوع التقرير",
+        "options": [
+          "خطأ",
+          "توافق"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "إصدار TurboKiller",
+        "placeholder": "1.2.0"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "mac",
+      "attributes": {
+        "label": "طراز Mac",
+        "placeholder": "MacBookPro16,1"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "cpu",
+      "attributes": {
+        "label": "المعالج",
+        "placeholder": "Intel Core i7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "macos",
+      "attributes": {
+        "label": "إصدار macOS",
+        "placeholder": "macOS 15.7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "sip",
+      "attributes": {
+        "label": "حماية تكامل النظام (SIP)",
+        "options": [
+          "مفعّلة",
+          "متوقفة",
+          "لا أعرف"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "compatibility_result",
+      "attributes": {
+        "label": "التوافق",
+        "options": [
+          "لا ينطبق — خطأ",
+          "يعمل",
+          "يعمل جزئيًا",
+          "لا يعمل"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "التفاصيل والسلوك المتوقع"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "خطوات إعادة ظهور المشكلة، إن وجدت"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "logs",
+      "attributes": {
+        "label": "الخطأ الكامل أو السجلات أو لقطات الشاشة"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "checks",
+      "attributes": {
+        "label": "التحقق",
+        "options": [
+          {
+            "label": "هذا التقرير يخص جهاز Mac بمعالج Intel.",
+            "required": true
+          },
+          {
+            "label": "اختبرت الإصدار الرسمي أو نسخة مبنية دون تعديل من هذا المستودع.",
+            "required": true
+          },
+          {
+            "label": "راجعت التقارير الموجودة عن المشكلة نفسها.",
+            "required": true
+          }
+        ]
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

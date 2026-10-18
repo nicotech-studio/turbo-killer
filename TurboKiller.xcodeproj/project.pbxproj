@@ -196,6 +196,18 @@
 				"zh-Hant",
 				ja,
 				ko,
+				"de",
+				"fr",
+				"es",
+				"pt-BR",
+				"pt-PT",
+				"it",
+				"ru",
+				"tr",
+				"id",
+				"vi",
+				"ar",
+				"he",
 			);
 			mainGroup = 82011CD1305AC37600C90179;
 			minimizedProjectReferenceProxies = 1;

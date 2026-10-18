@@ -26,6 +26,78 @@
             "state": "translated",
             "value": "關於"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À propos"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informazioni"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "О программе"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hakkında"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giới thiệu"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אודות"
+          }
         }
       }
     },
@@ -54,33 +126,77 @@
             "state": "translated",
             "value": "App 語言"
           }
-        }
-      }
-    },
-    "Apple silicon detected": {
-      "localizations": {
-        "ja": {
+        },
+        "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "AppleシリコンMacを検出しました"
+            "value": "App-Sprache"
           }
         },
-        "ko": {
+        "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Apple silicon Mac이 감지되었습니다"
+            "value": "Langue de l’app"
           }
         },
-        "zh-Hans": {
+        "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "已检测到 Apple 芯片"
+            "value": "Idioma de la app"
           }
         },
-        "zh-Hant": {
+        "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "已偵測到 Apple 晶片"
+            "value": "Idioma do app"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma da aplicação"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lingua dell’app"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Язык приложения"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulama dili"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bahasa app"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ngôn ngữ ứng dụng"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لغة التطبيق"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שפת היישום"
           }
         }
       }
@@ -110,6 +226,78 @@
             "state": "translated",
             "value": "需要核准"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genehmigung erforderlich"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisation requise"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se requiere autorización"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorização necessária"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorização necessária"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorizzazione necessaria"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Требуется разрешение"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Onay gerekli"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Persetujuan diperlukan"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cần phê duyệt"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تلزم الموافقة"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "נדרש אישור"
+          }
         }
       }
     },
@@ -137,6 +325,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "登入 Mac 時自動開啟 TurboKiller。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller automatisch öffnen, wenn du dich am Mac anmeldest."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir automatiquement TurboKiller à l’ouverture de session sur votre Mac."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir TurboKiller automáticamente al iniciar sesión en tu Mac."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir o TurboKiller automaticamente ao iniciar a sessão no Mac."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir o TurboKiller automaticamente ao iniciar sessão no Mac."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apri automaticamente TurboKiller quando accedi al Mac."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматически открывать TurboKiller при входе в систему на Mac."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mac’inizde oturum açtığınızda TurboKiller’ı otomatik olarak açın."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buka TurboKiller secara otomatis saat Anda masuk ke Mac."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tự động mở TurboKiller khi bạn đăng nhập vào máy Mac."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فتح TurboKiller تلقائيًا عند تسجيل الدخول إلى Mac."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "פתיחת TurboKiller אוטומטית בעת ההתחברות ל-Mac."
           }
         }
       }
@@ -166,6 +426,78 @@
             "state": "translated",
             "value": "需要核准背景 Helper"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hintergrunddienst muss genehmigt werden"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisation du service en arrière-plan requise"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se requiere autorizar el servicio en segundo plano"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "É necessário autorizar o serviço em segundo plano"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "É necessário autorizar o serviço em segundo plano"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "È richiesta l’autorizzazione del servizio in background"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Требуется разрешение для фоновой службы"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arka plan yardımcısının onaylanması gerekiyor"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Persetujuan layanan latar belakang diperlukan"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cần phê duyệt dịch vụ chạy nền"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تلزم الموافقة على الخدمة المساعدة في الخلفية"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "נדרש אישור לשירות העזר ברקע"
+          }
         }
       }
     },
@@ -193,6 +525,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "請我喝杯咖啡"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spendiere mir einen Kaffee"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offrez-moi un café"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invítame a un café"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pague um café para mim"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ofereça-me um café"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offrimi un caffè"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Угостить меня кофе"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bana bir kahve ısmarla"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traktir saya kopi"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mời tôi một ly cà phê"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ادعمني بفنجان قهوة"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אפשר להזמין אותי לקפה"
           }
         }
       }
@@ -222,6 +626,78 @@
             "state": "translated",
             "value": "重新檢查"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erneut prüfen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifier à nouveau"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volver a comprobar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificar novamente"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificar novamente"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifica di nuovo"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверить снова"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeniden denetle"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Periksa lagi"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kiểm tra lại"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التحقق مجددًا"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "בדיקה חוזרת"
+          }
         }
       }
     },
@@ -249,6 +725,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "已複製"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopiert"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copié"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiado"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiado"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiado"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiato"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скопировано"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopyalandı"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disalin"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã sao chép"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم النسخ"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הועתק"
           }
         }
       }
@@ -278,6 +826,78 @@
             "state": "translated",
             "value": "複製診斷資訊"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diagnosedaten kopieren"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier le diagnostic"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar diagnóstico"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar diagnóstico"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar diagnóstico"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copia diagnostica"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скопировать диагностику"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tanılama bilgilerini kopyala"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salin diagnostik"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sao chép thông tin chẩn đoán"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نسخ معلومات التشخيص"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "העתקת נתוני אבחון"
+          }
         }
       }
     },
@@ -305,6 +925,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "無法連線至 TurboKiller 特權 Helper。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbindung zum privilegierten TurboKiller-Hilfsdienst fehlgeschlagen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de se connecter au service privilégié de TurboKiller."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo conectar con el servicio privilegiado de TurboKiller."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível conectar ao serviço privilegiado do TurboKiller."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível ligar ao serviço privilegiado do TurboKiller."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile connettersi al servizio privilegiato di TurboKiller."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось подключиться к привилегированной службе TurboKiller."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller ayrıcalıklı yardımcısına bağlanılamadı."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak dapat terhubung ke layanan pembantu berhak istimewa TurboKiller."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không thể kết nối với dịch vụ trợ giúp đặc quyền của TurboKiller."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذر الاتصال بالخدمة المساعدة ذات الامتيازات في TurboKiller."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "לא ניתן להתחבר לשירות העזר בעל ההרשאות של TurboKiller."
           }
         }
       }
@@ -334,6 +1026,78 @@
             "state": "translated",
             "value": "無法取消註冊先前的特權 Helper："
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der vorherige privilegierte Hilfsdienst konnte nicht deregistriert werden:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de désenregistrer le précédent service privilégié :"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo anular el registro del servicio privilegiado anterior:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível cancelar o registro do serviço privilegiado anterior:"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível anular o registo do serviço privilegiado anterior:"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile annullare la registrazione del precedente servizio privilegiato:"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось отменить регистрацию предыдущей привилегированной службы:"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Önceki ayrıcalıklı yardımcının kaydı silinemedi:"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak dapat membatalkan pendaftaran layanan pembantu berhak istimewa sebelumnya:"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không thể hủy đăng ký dịch vụ trợ giúp đặc quyền trước đó:"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذر إلغاء تسجيل الخدمة المساعدة السابقة ذات الامتيازات:"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "לא ניתן לבטל את הרישום של שירות העזר הקודם בעל ההרשאות:"
+          }
         }
       }
     },
@@ -361,6 +1125,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "免費且開源 · GNU GPL v2"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kostenlos und quelloffen · GNU GPL v2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gratuit et open source · GNU GPL v2"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gratis y de código abierto · GNU GPL v2"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gratuito e de código aberto · GNU GPL v2"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gratuito e de código aberto · GNU GPL v2"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gratuito e open source · GNU GPL v2"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бесплатно, с открытым исходным кодом · GNU GPL v2"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ücretsiz ve açık kaynak · GNU GPL v2"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gratis dan sumber terbuka · GNU GPL v2"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Miễn phí và mã nguồn mở · GNU GPL v2"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مجاني ومفتوح المصدر · GNU GPL v2"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "חינמי ובקוד פתוח · GNU GPL v2"
           }
         }
       }
@@ -390,6 +1226,78 @@
             "state": "translated",
             "value": "一般"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allgemein"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Général"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geral"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geral"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generali"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Основные"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genel"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umum"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cài đặt chung"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عام"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כללי"
+          }
         }
       }
     },
@@ -418,33 +1326,77 @@
             "state": "translated",
             "value": "硬體控制尚未連線。"
           }
-        }
-      }
-    },
-    "Intel Mac detected": {
-      "localizations": {
-        "ja": {
+        },
+        "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Intel Macを検出しました"
+            "value": "Die Hardwaresteuerung ist nicht verbunden."
           }
         },
-        "ko": {
+        "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Intel Mac이 감지되었습니다"
+            "value": "Le contrôle du matériel n’est pas connecté."
           }
         },
-        "zh-Hans": {
+        "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "已检测到 Intel Mac"
+            "value": "El control del hardware no está conectado."
           }
         },
-        "zh-Hant": {
+        "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "已偵測到 Intel Mac"
+            "value": "O controle do hardware não está conectado."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O controlo do hardware não está ligado."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il controllo dell’hardware non è connesso."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Управление оборудованием не подключено."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Donanım denetimi bağlı değil."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrol perangkat keras tidak terhubung."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chưa kết nối điều khiển phần cứng."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التحكم في الأجهزة غير متصل."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "בקרת החומרה אינה מחוברת."
           }
         }
       }
@@ -474,6 +1426,78 @@
             "state": "translated",
             "value": "關閉 Turbo Boost"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost deaktivieren"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Désactiver Turbo Boost"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desactivar Turbo Boost"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desativar Turbo Boost"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desativar Turbo Boost"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disattiva Turbo Boost"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отключить Turbo Boost"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost’u kapat"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nonaktifkan Turbo Boost"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tắt Turbo Boost"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيقاف Turbo Boost"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כיבוי Turbo Boost"
+          }
         }
       }
     },
@@ -501,6 +1525,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "語言"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprache"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Langue"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lingua"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Язык"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dil"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bahasa"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ngôn ngữ"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اللغة"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שפה"
           }
         }
       }
@@ -530,6 +1626,78 @@
             "state": "translated",
             "value": "登入時啟動 TurboKiller"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller bei der Anmeldung starten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lancer TurboKiller à l’ouverture de session"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir TurboKiller al iniciar sesión"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir o TurboKiller ao iniciar a sessão"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir o TurboKiller ao iniciar sessão"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avvia TurboKiller al login"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запускать TurboKiller при входе в систему"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oturum açıldığında TurboKiller’ı başlat"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jalankan TurboKiller saat masuk"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mở TurboKiller khi đăng nhập"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تشغيل TurboKiller عند تسجيل الدخول"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הפעלת TurboKiller בעת ההתחברות"
+          }
         }
       }
     },
@@ -557,6 +1725,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "授權條款"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lizenz"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licence"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licencia"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licença"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licença"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licenza"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Лицензия"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisans"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisensi"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giấy phép"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الترخيص"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "רישיון"
           }
         }
       }
@@ -586,6 +1826,78 @@
             "state": "translated",
             "value": "macOS 已阻擋 Turbo Boost 核心延伸模組。請開啟「系統設定 → 隱私權與安全性」並允許該延伸模組，然後再試一次。"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS hat die Turbo-Boost-Kernelerweiterung blockiert. Erlaube sie unter Systemeinstellungen → Datenschutz & Sicherheit und versuche es erneut."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS a bloqué l’extension du noyau Turbo Boost. Autorisez-la dans Réglages Système → Confidentialité et sécurité, puis réessayez."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS ha bloqueado la extensión del kernel de Turbo Boost. Autorízala en Ajustes del Sistema → Privacidad y seguridad y vuelve a intentarlo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O macOS bloqueou a extensão de kernel do Turbo Boost. Autorize-a em Ajustes do Sistema → Privacidade e Segurança e tente novamente."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O macOS bloqueou a extensão do kernel do Turbo Boost. Autorize-a em Definições do Sistema → Privacidade e segurança e tente novamente."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS ha bloccato l’estensione del kernel di Turbo Boost. Autorizzala in Impostazioni di Sistema → Privacy e sicurezza, quindi riprova."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS заблокировала расширение ядра Turbo Boost. Разрешите его в Системные настройки → Конфиденциальность и безопасность и повторите попытку."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS, Turbo Boost çekirdek uzantısını engelledi. Sistem Ayarları → Gizlilik ve Güvenlik bölümünden izin verip yeniden deneyin."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS memblokir ekstensi kernel Turbo Boost. Izinkan di Pengaturan Sistem → Privasi & Keamanan, lalu coba lagi."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS đã chặn phần mở rộng nhân Turbo Boost. Cho phép trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật, rồi thử lại."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حظر macOS امتداد نواة Turbo Boost. اسمح به في إعدادات النظام ← الخصوصية والأمن، ثم حاول مجددًا."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS חסמה את הרחבת הליבה של Turbo Boost. יש לאפשר אותה בהגדרות המערכת ← פרטיות ואבטחה ולנסות שוב."
+          }
         }
       }
     },
@@ -614,38 +1926,158 @@
             "state": "translated",
             "value": "macOS 已允許核心延伸模組，但必須重新啟動一次 Mac，TurboKiller 才能使用它。"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS hat die Kernelerweiterung genehmigt. Starte den Mac einmal neu, bevor TurboKiller sie verwenden kann."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS a approuvé l’extension du noyau, mais vous devez redémarrer votre Mac une fois avant de pouvoir l’utiliser avec TurboKiller."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS ha aprobado la extensión del kernel, pero debes reiniciar tu Mac una vez para que TurboKiller pueda usarla."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O macOS aprovou a extensão de kernel, mas é necessário reiniciar o Mac uma vez para que o TurboKiller possa usá-la."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O macOS aprovou a extensão do kernel, mas é necessário reiniciar o Mac uma vez para o TurboKiller a poder utilizar."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS ha approvato l’estensione del kernel, ma devi riavviare il Mac una volta prima che TurboKiller possa usarla."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS одобрила расширение ядра, но для его использования в TurboKiller необходимо один раз перезагрузить Mac."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS çekirdek uzantısını onayladı ancak TurboKiller’ın kullanabilmesi için Mac’inizi bir kez yeniden başlatmalısınız."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS telah menyetujui ekstensi kernel, tetapi Mac harus dimulai ulang satu kali sebelum TurboKiller dapat menggunakannya."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS đã phê duyệt phần mở rộng nhân, nhưng bạn cần khởi động lại máy Mac một lần trước khi TurboKiller có thể sử dụng."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وافق macOS على امتداد النواة، لكن يجب إعادة تشغيل Mac مرة واحدة قبل أن يتمكن TurboKiller من استخدامه."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS אישרה את הרחבת הליבה, אך יש להפעיל את ה-Mac מחדש פעם אחת לפני ש-TurboKiller יוכל להשתמש בה."
+          }
         }
       }
     },
-    "Maximum CPU performance is available.": {
+    "NicoTech Studio": {
       "localizations": {
-        "ja": {
+        "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "CPUの最大パフォーマンスを利用できます。"
+            "value": "NicoTech Studio"
           }
         },
-        "ko": {
+        "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CPU의 최대 성능을 사용할 수 있습니다."
+            "value": "NicoTech Studio"
           }
         },
-        "zh-Hans": {
+        "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "CPU 可发挥最高性能。"
+            "value": "NicoTech Studio"
           }
         },
-        "zh-Hant": {
+        "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "CPU 可發揮最高效能。"
+            "value": "NicoTech Studio"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NicoTech Studio"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NicoTech Studio"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NicoTech Studio"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NicoTech Studio"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NicoTech Studio"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NicoTech Studio"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NicoTech Studio"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NicoTech Studio"
           }
         }
-      }
+      },
+      "shouldTranslate": false
     },
-    "NicoTech Studio": {},
     "Official Project": {
       "localizations": {
         "zh-Hans": {
@@ -670,6 +2102,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "공식 프로젝트"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offizielles Projekt"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projet officiel"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proyecto oficial"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projeto oficial"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projeto oficial"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progetto ufficiale"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Официальный проект"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resmî proje"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proyek resmi"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dự án chính thức"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المشروع الرسمي"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "המיזם הרשמי"
           }
         }
       }
@@ -699,34 +2203,77 @@
             "state": "translated",
             "value": "開啟語言與地區…"
           }
-        }
-      }
-    },
-    "Open Language Settings…": {
-      "extractionState": "stale",
-      "localizations": {
-        "ja": {
+        },
+        "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "言語設定を開く…"
+            "value": "Sprache & Region öffnen…"
           }
         },
-        "ko": {
+        "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "언어 설정 열기…"
+            "value": "Ouvrir Langue et région…"
           }
         },
-        "zh-Hans": {
+        "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "打开语言设置…"
+            "value": "Abrir Idioma y región…"
           }
         },
-        "zh-Hant": {
+        "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "開啟語言設定…"
+            "value": "Abrir Idioma e Região…"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Idioma e região…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apri Lingua e zona…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть «Язык и регион»…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dil ve Bölge’yi aç…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buka Bahasa & Wilayah…"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mở Ngôn ngữ & Vùng…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فتح اللغة والمنطقة…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "פתיחת שפה ואזור…"
           }
         }
       }
@@ -756,6 +2303,78 @@
             "state": "translated",
             "value": "開啟系統設定"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Systemeinstellungen öffnen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir les Réglages Système"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Ajustes del Sistema"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Ajustes do Sistema"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Definições do Sistema"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apri Impostazioni di Sistema"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть Системные настройки"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistem Ayarları’nı aç"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buka Pengaturan Sistem"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mở Cài đặt hệ thống"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فتح إعدادات النظام"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "פתיחת הגדרות המערכת"
+          }
         }
       }
     },
@@ -783,6 +2402,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "結束 TurboKiller"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller beenden"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quitter TurboKiller"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salir de TurboKiller"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encerrar TurboKiller"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sair do TurboKiller"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esci da TurboKiller"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Завершить TurboKiller"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller’dan çık"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keluar dari TurboKiller"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thoát TurboKiller"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إنهاء TurboKiller"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "יציאה מ-TurboKiller"
           }
         }
       }
@@ -812,6 +2503,78 @@
             "state": "translated",
             "value": "回報問題"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Problem melden"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signaler un problème"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informar de un problema"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relatar um problema"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comunicar um problema"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segnala un problema"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сообщить о проблеме"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sorun bildir"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laporkan masalah"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Báo cáo sự cố"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإبلاغ عن مشكلة"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "דיווח על בעיה"
+          }
         }
       }
     },
@@ -839,6 +2602,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "需要重新啟動"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neustart erforderlich"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redémarrage requis"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Es necesario reiniciar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "É necessário reiniciar"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "É necessário reiniciar"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riavvio necessario"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Требуется перезагрузка"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeniden başlatma gerekli"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perlu mulai ulang"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cần khởi động lại"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تلزم إعادة التشغيل"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "נדרשת הפעלה מחדש"
           }
         }
       }
@@ -868,6 +2703,78 @@
             "state": "translated",
             "value": "恢復 Turbo Boost"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost wiederherstellen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rétablir Turbo Boost"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaurar Turbo Boost"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaurar Turbo Boost"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaurar Turbo Boost"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripristina Turbo Boost"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Восстановить Turbo Boost"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost’u geri aç"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pulihkan Turbo Boost"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khôi phục Turbo Boost"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استعادة Turbo Boost"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שחזור Turbo Boost"
+          }
         }
       }
     },
@@ -895,6 +2802,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "設定…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einstellungen…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réglages…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes…"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Definições…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impostazioni…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Настройки…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarlar…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pengaturan…"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cài đặt…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإعدادات…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הגדרות…"
           }
         }
       }
@@ -924,6 +2903,78 @@
             "state": "translated",
             "value": "支持 TurboKiller"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller unterstützen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soutenir TurboKiller"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apoyar a TurboKiller"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apoiar o TurboKiller"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apoiar o TurboKiller"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sostieni TurboKiller"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поддержать TurboKiller"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller’ı destekle"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dukung TurboKiller"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ủng hộ TurboKiller"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دعم TurboKiller"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "תמיכה ב-TurboKiller"
+          }
         }
       }
     },
@@ -951,6 +3002,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "找不到內建的 Turbo Boost 核心延伸模組。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die mitgelieferte Turbo-Boost-Kernelerweiterung wurde nicht gefunden."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’extension du noyau Turbo Boost fournie est introuvable."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se encontró la extensión del kernel de Turbo Boost incluida."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A extensão de kernel do Turbo Boost incluída não foi encontrada."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A extensão do kernel do Turbo Boost incluída não foi encontrada."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’estensione del kernel di Turbo Boost inclusa non è stata trovata."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не найдено встроенное расширение ядра Turbo Boost."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birlikte gelen Turbo Boost çekirdek uzantısı bulunamadı."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekstensi kernel Turbo Boost yang disertakan tidak ditemukan."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không tìm thấy phần mở rộng nhân Turbo Boost đi kèm."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذر العثور على امتداد نواة Turbo Boost المضمّن."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הרחבת הליבה המצורפת של Turbo Boost לא נמצאה."
           }
         }
       }
@@ -980,33 +3103,77 @@
             "state": "translated",
             "value": "內建的 Turbo Boost 核心延伸模組與預期版本不符。"
           }
-        }
-      }
-    },
-    "The CPU is running without Turbo Boost.": {
-      "localizations": {
-        "ja": {
+        },
+        "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "CPUはTurbo Boostなしで動作しています。"
+            "value": "Die mitgelieferte Turbo-Boost-Kernelerweiterung entspricht nicht der erwarteten Version."
           }
         },
-        "ko": {
+        "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "CPU가 Turbo Boost 없이 실행 중입니다."
+            "value": "L’extension du noyau Turbo Boost fournie ne correspond pas à la version attendue."
           }
         },
-        "zh-Hans": {
+        "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "CPU 当前未启用 Turbo Boost。"
+            "value": "La extensión del kernel de Turbo Boost incluida no coincide con la versión esperada."
           }
         },
-        "zh-Hant": {
+        "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "CPU 目前未啟用 Turbo Boost。"
+            "value": "A extensão de kernel do Turbo Boost incluída não corresponde à versão esperada."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A extensão do kernel do Turbo Boost incluída não corresponde à versão esperada."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’estensione del kernel di Turbo Boost inclusa non corrisponde alla versione prevista."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Встроенное расширение ядра Turbo Boost не соответствует ожидаемой версии."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birlikte gelen Turbo Boost çekirdek uzantısı beklenen sürümle eşleşmiyor."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekstensi kernel Turbo Boost yang disertakan tidak cocok dengan versi yang diharapkan."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phần mở rộng nhân Turbo Boost đi kèm không khớp với phiên bản dự kiến."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "امتداد نواة Turbo Boost المضمّن لا يطابق الإصدار المتوقع."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הרחבת הליבה המצורפת של Turbo Boost אינה תואמת לגרסה הצפויה."
           }
         }
       }
@@ -1036,6 +3203,78 @@
             "state": "translated",
             "value": "無法載入核心延伸模組。"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Kernelerweiterung konnte nicht geladen werden."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de charger l’extension du noyau."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo cargar la extensión del kernel."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível carregar a extensão de kernel."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível carregar a extensão do kernel."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile caricare l’estensione del kernel."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить расширение ядра."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çekirdek uzantısı yüklenemedi."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekstensi kernel tidak dapat dimuat."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không thể nạp phần mở rộng nhân."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذر تحميل امتداد النواة."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "לא ניתן לטעון את הרחבת הליבה."
+          }
         }
       }
     },
@@ -1063,6 +3302,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "無法卸載核心延伸模組。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Kernelerweiterung konnte nicht entladen werden."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de décharger l’extension du noyau."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo descargar la extensión del kernel."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível descarregar a extensão de kernel."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível descarregar a extensão do kernel."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile scaricare l’estensione del kernel."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось выгрузить расширение ядра."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çekirdek uzantısı bellekten kaldırılamadı."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekstensi kernel tidak dapat dilepas dari memori."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không thể dỡ phần mở rộng nhân."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذر إلغاء تحميل امتداد النواة."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "לא ניתן לפרוק את הרחבת הליבה."
           }
         }
       }
@@ -1092,6 +3403,78 @@
             "state": "translated",
             "value": "使用前必須先在系統設定中允許該核心延伸模組。"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Kernelerweiterung muss vor der Verwendung in den Systemeinstellungen genehmigt werden."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’extension du noyau doit être approuvée dans les Réglages Système avant utilisation."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debes aprobar la extensión del kernel en Ajustes del Sistema antes de usarla."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A extensão de kernel precisa ser aprovada nos Ajustes do Sistema antes do uso."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A extensão do kernel tem de ser aprovada nas Definições do Sistema antes de ser utilizada."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’estensione del kernel deve essere approvata nelle Impostazioni di Sistema prima dell’uso."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перед использованием расширение ядра нужно одобрить в Системных настройках."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çekirdek uzantısı kullanılmadan önce Sistem Ayarları’nda onaylanmalıdır."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekstensi kernel harus disetujui di Pengaturan Sistem sebelum digunakan."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phần mở rộng nhân phải được phê duyệt trong Cài đặt hệ thống trước khi sử dụng."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يجب الموافقة على امتداد النواة في إعدادات النظام قبل استخدامه."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "יש לאשר את הרחבת הליבה בהגדרות המערכת לפני השימוש."
+          }
         }
       }
     },
@@ -1119,6 +3502,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "核心延伸模組已獲允許，但 macOS 要求重新啟動後才能使用。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Kernelerweiterung wurde genehmigt, aber macOS erfordert vor der Verwendung einen Neustart."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’extension du noyau a été approuvée, mais macOS exige un redémarrage avant son utilisation."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La extensión del kernel se ha aprobado, pero macOS requiere reiniciar antes de usarla."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A extensão de kernel foi aprovada, mas o macOS exige uma reinicialização antes do uso."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A extensão do kernel foi aprovada, mas o macOS exige um reinício antes de a utilizar."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’estensione del kernel è stata approvata, ma macOS richiede un riavvio prima dell’uso."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расширение ядра одобрено, но macOS требует перезагрузки перед использованием."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çekirdek uzantısı onaylandı ancak kullanılabilmesi için macOS’un yeniden başlatılması gerekiyor."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekstensi kernel telah disetujui, tetapi macOS memerlukan mulai ulang sebelum dapat digunakan."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phần mở rộng nhân đã được phê duyệt, nhưng macOS yêu cầu khởi động lại trước khi sử dụng."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمت الموافقة على امتداد النواة، لكن macOS يتطلب إعادة التشغيل قبل استخدامه."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הרחבת הליבה אושרה, אך macOS דורשת הפעלה מחדש לפני השימוש בה."
           }
         }
       }
@@ -1148,6 +3603,78 @@
             "state": "translated",
             "value": "找不到 TurboKiller 特權 Helper。"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der privilegierte TurboKiller-Hilfsdienst wurde nicht gefunden."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le service privilégié de TurboKiller est introuvable."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se encontró el servicio privilegiado de TurboKiller."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O serviço privilegiado do TurboKiller não foi encontrado."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O serviço privilegiado do TurboKiller não foi encontrado."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il servizio privilegiato di TurboKiller non è stato trovato."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Привилегированная служба TurboKiller не найдена."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller ayrıcalıklı yardımcısı bulunamadı."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layanan pembantu berhak istimewa TurboKiller tidak ditemukan."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không tìm thấy dịch vụ trợ giúp đặc quyền của TurboKiller."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذر العثور على الخدمة المساعدة ذات الامتيازات في TurboKiller."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שירות העזר בעל ההרשאות של TurboKiller לא נמצא."
+          }
         }
       }
     },
@@ -1175,6 +3702,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "無法註冊 TurboKiller 特權 Helper。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der privilegierte TurboKiller-Hilfsdienst konnte nicht registriert werden."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d’enregistrer le service privilégié de TurboKiller."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo registrar el servicio privilegiado de TurboKiller."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível registrar o serviço privilegiado do TurboKiller."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível registar o serviço privilegiado do TurboKiller."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile registrare il servizio privilegiato di TurboKiller."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось зарегистрировать привилегированную службу TurboKiller."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller ayrıcalıklı yardımcısı kaydedilemedi."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layanan pembantu berhak istimewa TurboKiller tidak dapat didaftarkan."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không thể đăng ký dịch vụ trợ giúp đặc quyền của TurboKiller."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذر تسجيل الخدمة المساعدة ذات الامتيازات في TurboKiller."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "לא ניתן לרשום את שירות העזר בעל ההרשאות של TurboKiller."
           }
         }
       }
@@ -1204,6 +3803,78 @@
             "state": "translated",
             "value": "TurboKiller 特權 Helper 沒有回應。"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der privilegierte TurboKiller-Hilfsdienst antwortet nicht."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le service privilégié de TurboKiller n’a pas répondu."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El servicio privilegiado de TurboKiller no respondió."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O serviço privilegiado do TurboKiller não respondeu."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O serviço privilegiado do TurboKiller não respondeu."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il servizio privilegiato di TurboKiller non ha risposto."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Привилегированная служба TurboKiller не ответила."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller ayrıcalıklı yardımcısı yanıt vermedi."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layanan pembantu berhak istimewa TurboKiller tidak merespons."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dịch vụ trợ giúp đặc quyền của TurboKiller không phản hồi."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم تستجب الخدمة المساعدة ذات الامتيازات في TurboKiller."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שירות העזר בעל ההרשאות של TurboKiller לא הגיב."
+          }
         }
       }
     },
@@ -1231,6 +3902,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "TurboKiller 特權 Helper 目前無法使用。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der privilegierte TurboKiller-Hilfsdienst ist nicht verfügbar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le service privilégié de TurboKiller est indisponible."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El servicio privilegiado de TurboKiller no está disponible."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O serviço privilegiado do TurboKiller não está disponível."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O serviço privilegiado do TurboKiller não está disponível."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il servizio privilegiato di TurboKiller non è disponibile."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Привилегированная служба TurboKiller недоступна."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller ayrıcalıklı yardımcısı kullanılamıyor."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layanan pembantu berhak istimewa TurboKiller tidak tersedia."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dịch vụ trợ giúp đặc quyền của TurboKiller không khả dụng."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الخدمة المساعدة ذات الامتيازات في TurboKiller غير متاحة."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שירות העזר בעל ההרשאות של TurboKiller אינו זמין."
           }
         }
       }
@@ -1260,33 +4003,77 @@
             "state": "translated",
             "value": "第三方聲明"
           }
-        }
-      }
-    },
-    "This Mac is compatible with TurboKiller's target platform.": {
-      "localizations": {
-        "ja": {
+        },
+        "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "このMacはTurboKillerの対象環境に対応しています。"
+            "value": "Hinweise zu Drittanbietern"
           }
         },
-        "ko": {
+        "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "이 Mac은 TurboKiller의 대상 환경과 호환됩니다."
+            "value": "Mentions des tiers"
           }
         },
-        "zh-Hans": {
+        "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "此 Mac 符合 TurboKiller 的运行要求。"
+            "value": "Avisos de terceros"
           }
         },
-        "zh-Hant": {
+        "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "此 Mac 符合 TurboKiller 的執行需求。"
+            "value": "Avisos de terceiros"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avisos de terceiros"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Note di terze parti"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уведомления третьих сторон"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Üçüncü taraf bildirimleri"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pemberitahuan pihak ketiga"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thông báo của bên thứ ba"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إشعارات الجهات الخارجية"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הודעות צד שלישי"
           }
         }
       }
@@ -1316,6 +4103,78 @@
             "state": "translated",
             "value": "Turbo Boost 控制失敗。"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Turbo-Boost-Steuerung ist fehlgeschlagen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le contrôle de Turbo Boost a échoué."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo controlar Turbo Boost."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha no controle do Turbo Boost."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha no controlo do Turbo Boost."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controllo di Turbo Boost non riuscito."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось управлять Turbo Boost."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost denetimi başarısız oldu."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrol Turbo Boost gagal."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Điều khiển Turbo Boost thất bại."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فشل التحكم في Turbo Boost."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "השליטה ב-Turbo Boost נכשלה."
+          }
         }
       }
     },
@@ -1343,6 +4202,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "Intel Mac 的 Turbo Boost 控制工具"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo-Boost-Steuerung für Intel-Macs"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contrôle de Turbo Boost pour les Mac Intel"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Control de Turbo Boost para Mac con Intel"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controle do Turbo Boost para Macs Intel"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlo do Turbo Boost para Macs Intel"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controllo di Turbo Boost per Mac Intel"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Управление Turbo Boost на Mac с Intel"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intel Mac’ler için Turbo Boost denetimi"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrol Turbo Boost untuk Mac Intel"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Điều khiển Turbo Boost cho máy Mac Intel"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التحكم في Turbo Boost لأجهزة Mac بمعالجات Intel"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שליטה ב-Turbo Boost במחשבי Mac עם Intel"
           }
         }
       }
@@ -1372,33 +4303,77 @@
             "state": "translated",
             "value": "Turbo Boost 控制僅適用於受支援的 Intel Mac。"
           }
-        }
-      }
-    },
-    "Turbo Boost is active": {
-      "localizations": {
-        "ja": {
+        },
+        "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Turbo Boostは有効です"
+            "value": "Die Turbo-Boost-Steuerung ist nur auf unterstützten Intel-Macs verfügbar."
           }
         },
-        "ko": {
+        "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Turbo Boost가 활성화되어 있습니다"
+            "value": "Le contrôle de Turbo Boost est réservé aux Mac Intel compatibles."
           }
         },
-        "zh-Hans": {
+        "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Turbo Boost 已开启"
+            "value": "El control de Turbo Boost solo está disponible en Mac con Intel compatibles."
           }
         },
-        "zh-Hant": {
+        "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Turbo Boost 已開啟"
+            "value": "O controle do Turbo Boost está disponível apenas em Macs Intel compatíveis."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O controlo do Turbo Boost só está disponível em Macs Intel compatíveis."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il controllo di Turbo Boost è disponibile solo sui Mac Intel compatibili."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Управление Turbo Boost доступно только на совместимых Mac с Intel."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost denetimi yalnızca desteklenen Intel Mac’lerde kullanılabilir."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrol Turbo Boost hanya tersedia pada Mac Intel yang didukung."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chỉ có thể điều khiển Turbo Boost trên máy Mac Intel được hỗ trợ."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التحكم في Turbo Boost متاح فقط على أجهزة Mac المدعومة بمعالجات Intel."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "השליטה ב-Turbo Boost זמינה רק במחשבי Mac נתמכים עם Intel."
           }
         }
       }
@@ -1428,6 +4403,78 @@
             "state": "translated",
             "value": "Turbo Boost 已關閉"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost ist deaktiviert"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost est désactivé"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost está desactivado"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost está desativado"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost está desativado"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost è disattivato"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost отключён"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost kapalı"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost nonaktif"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost đã tắt"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost متوقف"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost כבוי"
+          }
         }
       }
     },
@@ -1455,6 +4502,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "無法讀取 Turbo Boost 狀態。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Turbo-Boost-Status konnte nicht gelesen werden."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de lire l’état de Turbo Boost."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo leer el estado de Turbo Boost."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível ler o estado do Turbo Boost."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível ler o estado do Turbo Boost."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile leggere lo stato di Turbo Boost."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось прочитать состояние Turbo Boost."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost durumu okunamadı."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Status Turbo Boost tidak dapat dibaca."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không thể đọc trạng thái Turbo Boost."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذرت قراءة حالة Turbo Boost."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "לא ניתן לקרוא את מצב Turbo Boost."
           }
         }
       }
@@ -1484,6 +4603,78 @@
             "state": "translated",
             "value": "Turbo Boost 狀態無法使用"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo-Boost-Status nicht verfügbar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État de Turbo Boost indisponible"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estado de Turbo Boost no disponible"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estado do Turbo Boost indisponível"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estado do Turbo Boost indisponível"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stato di Turbo Boost non disponibile"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Состояние Turbo Boost недоступно"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost durumu kullanılamıyor"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Status Turbo Boost tidak tersedia"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trạng thái Turbo Boost không khả dụng"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حالة Turbo Boost غير متاحة"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מצב Turbo Boost אינו זמין"
+          }
         }
       }
     },
@@ -1512,37 +4703,81 @@
             "state": "translated",
             "value": "TurboKiller"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller"
+          }
         }
-      }
-    },
-    "TurboKiller follows the language selected for the app in macOS.": {
-      "extractionState": "stale",
-      "localizations": {
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "TurboKillerはmacOSでこのアプリに設定された言語を使用します。"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "TurboKiller는 macOS에서 이 앱에 선택된 언어를 사용합니다."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "TurboKiller 将使用 macOS 中为此 App 选择的语言。"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "TurboKiller 將使用 macOS 中為此 App 選擇的語言。"
-          }
-        }
-      }
+      },
+      "shouldTranslate": false
     },
     "TurboKiller is designed for Intel Macs only.": {
       "localizations": {
@@ -1568,6 +4803,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "TurboKiller 僅適用於 Intel Mac。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller ist nur für Intel-Macs vorgesehen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller est conçu uniquement pour les Mac Intel."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller está diseñado solo para Mac con Intel."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O TurboKiller foi desenvolvido apenas para Macs Intel."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O TurboKiller foi concebido apenas para Macs Intel."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller è progettato solo per Mac Intel."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller предназначен только для Mac с Intel."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller yalnızca Intel Mac’ler için tasarlanmıştır."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller dirancang hanya untuk Mac Intel."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller chỉ dành cho máy Mac Intel."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صُمّم TurboKiller لأجهزة Mac بمعالجات Intel فقط."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller מיועד רק למחשבי Mac עם Intel."
           }
         }
       }
@@ -1597,6 +4904,78 @@
             "state": "translated",
             "value": "TurboKiller 免費且開源。如果它對你有幫助，可以請我喝杯咖啡。"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller ist kostenlos und quelloffen. Wenn es dir hilft, kannst du mir einen Kaffee spendieren."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller est gratuit et open source. S’il vous est utile, vous pouvez m’offrir un café."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller es gratis y de código abierto. Si te resulta útil, puedes invitarme a un café."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O TurboKiller é gratuito e de código aberto. Se ele ajudar você, pode pagar um café para mim."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O TurboKiller é gratuito e de código aberto. Se lhe for útil, pode oferecer-me um café."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller è gratuito e open source. Se ti è utile, puoi offrirmi un caffè."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller — бесплатная программа с открытым исходным кодом. Если она вам полезна, можете угостить меня кофе."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller ücretsiz ve açık kaynaklıdır. İşinize yarıyorsa bana bir kahve ısmarlayabilirsiniz."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller gratis dan bersumber terbuka. Jika bermanfaat, Anda dapat mentraktir saya kopi."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller miễn phí và có mã nguồn mở. Nếu ứng dụng hữu ích, bạn có thể mời tôi một ly cà phê."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller مجاني ومفتوح المصدر. إذا أفادك، يمكنك دعمي بفنجان قهوة."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller חינמי ובקוד פתוח. אם הוא עוזר לכם, אפשר להזמין אותי לקפה."
+          }
         }
       }
     },
@@ -1624,6 +5003,78 @@
           "stringUnit": {
             "state": "translated",
             "value": "TurboKiller 需要取得在背景執行特權 Helper 的權限。請在系統設定中允許 TurboKiller 在背景執行，然後返回此處。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller benötigt die Erlaubnis, seinen privilegierten Hilfsdienst im Hintergrund auszuführen. Erlaube TurboKiller in den Systemeinstellungen und kehre dann hierher zurück."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller a besoin de votre autorisation pour exécuter son service privilégié en arrière-plan. Autorisez TurboKiller dans les Réglages Système, puis revenez ici."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller necesita permiso para ejecutar su servicio privilegiado en segundo plano. Autoriza TurboKiller en Ajustes del Sistema y vuelve aquí."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O TurboKiller precisa de permissão para executar seu serviço privilegiado em segundo plano. Autorize o TurboKiller nos Ajustes do Sistema e volte aqui."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O TurboKiller precisa de autorização para executar o seu serviço privilegiado em segundo plano. Autorize o TurboKiller nas Definições do Sistema e regresse aqui."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller necessita dell’autorizzazione per eseguire il servizio privilegiato in background. Autorizza TurboKiller nelle Impostazioni di Sistema, quindi torna qui."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller требуется разрешение для запуска привилегированной службы в фоновом режиме. Разрешите TurboKiller в Системных настройках и вернитесь сюда."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller’ın ayrıcalıklı yardımcısını arka planda çalıştırması için izin gerekiyor. Sistem Ayarları’nda TurboKiller’a izin verin, ardından buraya dönün."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller memerlukan izin untuk menjalankan layanan pembantu berhak istimewa di latar belakang. Izinkan TurboKiller di Pengaturan Sistem, lalu kembali ke sini."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller cần quyền chạy dịch vụ trợ giúp đặc quyền trong nền. Cho phép TurboKiller trong Cài đặt hệ thống, rồi quay lại đây."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يحتاج TurboKiller إلى إذن لتشغيل خدمته المساعدة ذات الامتيازات في الخلفية. اسمح لـ TurboKiller في إعدادات النظام ثم عد إلى هنا."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TurboKiller זקוק להרשאה להפעלת שירות העזר בעל ההרשאות ברקע. יש לאפשר את TurboKiller בהגדרות המערכת ולחזור לכאן."
           }
         }
       }
@@ -1653,6 +5104,78 @@
             "state": "translated",
             "value": "在「應用程式」中加入或選擇 TurboKiller，然後選擇語言。這只會變更 TurboKiller 的語言，不會變更 Mac 的系統語言。"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Füge unter Anwendungen TurboKiller hinzu oder wähle es aus und lege eine Sprache fest. Dies ändert nur TurboKiller, nicht die Systemsprache deines Mac."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans Applications, ajoutez ou sélectionnez TurboKiller et choisissez une langue. Cela ne modifie que TurboKiller, sans changer la langue système du Mac."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En Aplicaciones, añade o selecciona TurboKiller y elige un idioma. Solo cambia TurboKiller, sin modificar el idioma del sistema de tu Mac."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Em Aplicativos, adicione ou selecione o TurboKiller e escolha um idioma. Isso altera apenas o TurboKiller, sem mudar o idioma do sistema do Mac."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Em Aplicações, adicione ou selecione o TurboKiller e escolha um idioma. Isto altera apenas o TurboKiller, sem mudar o idioma do sistema do Mac."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Applicazioni, aggiungi o seleziona TurboKiller e scegli una lingua. Cambierà solo TurboKiller, senza modificare la lingua di sistema del Mac."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В разделе «Приложения» добавьте или выберите TurboKiller и задайте язык. Это изменит только TurboKiller, а не язык системы Mac."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulamalar bölümünde TurboKiller’ı ekleyin veya seçin ve bir dil belirleyin. Bu yalnızca TurboKiller’ı değiştirir, Mac’inizin sistem dilini değiştirmez."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Di Aplikasi, tambahkan atau pilih TurboKiller dan pilih bahasa. Ini hanya mengubah TurboKiller, bukan bahasa sistem Mac Anda."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trong Ứng dụng, thêm hoặc chọn TurboKiller và chọn ngôn ngữ. Thao tác này chỉ thay đổi TurboKiller, không thay đổi ngôn ngữ hệ thống của máy Mac."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ضمن التطبيقات، أضف TurboKiller أو حدده واختر لغة. يغيّر هذا لغة TurboKiller فقط ولا يغيّر لغة نظام Mac."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "תחת יישומים, הוסיפו או בחרו את TurboKiller ובחרו שפה. השינוי חל רק על TurboKiller ואינו משנה את שפת המערכת של ה-Mac."
+          }
         }
       }
     },
@@ -1681,6 +5204,78 @@
             "state": "translated",
             "value": "版本 %@"
           }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versión %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versão %@"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versão %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versione %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Версия %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sürüm %@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versi %@"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phiên bản %@"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإصدار ⁦%@⁩"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "גרסה ⁦%@⁩"
+          }
         }
       }
     },
@@ -1708,6 +5303,178 @@
           "stringUnit": {
             "state": "translated",
             "value": "處理中…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird ausgeführt…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opération en cours…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Procesando…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Processando…"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A processar…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operazione in corso…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выполняется…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşlem yapılıyor…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Memproses…"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đang xử lý…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ التنفيذ…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הפעולה מתבצעת…"
+          }
+        }
+      }
+    },
+    "Turbo Boost is enabled": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost は有効です"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost가 켜져 있습니다"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost 已开启"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost 已開啟"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost ist aktiviert"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost est activé"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost está activado"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost está ativado"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost está ativado"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost è attivato"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost включён"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost açık"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost aktif"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost đã bật"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost مفعّل"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turbo Boost מופעל"
           }
         }
       }

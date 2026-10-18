@@ -1,0 +1,150 @@
+{
+  "name": "Bahasa Indonesia",
+  "description": "Laporkan bug atau bagikan hasil kompatibilitas.",
+  "title": "[Report] ",
+  "body": [
+    {
+      "type": "dropdown",
+      "id": "report_type",
+      "attributes": {
+        "label": "Jenis laporan",
+        "options": [
+          "Bug",
+          "Kompatibilitas"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Versi TurboKiller",
+        "placeholder": "1.2.0"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "mac",
+      "attributes": {
+        "label": "Model Mac",
+        "placeholder": "MacBookPro16,1"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "cpu",
+      "attributes": {
+        "label": "CPU",
+        "placeholder": "Intel Core i7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "macos",
+      "attributes": {
+        "label": "Versi macOS",
+        "placeholder": "macOS 15.7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "sip",
+      "attributes": {
+        "label": "Perlindungan Integritas Sistem (SIP)",
+        "options": [
+          "Aktif",
+          "Nonaktif",
+          "Tidak tahu"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "compatibility_result",
+      "attributes": {
+        "label": "Kompatibilitas",
+        "options": [
+          "Tidak berlaku — bug",
+          "Berfungsi",
+          "Berfungsi sebagian",
+          "Tidak berfungsi"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "Detail dan perilaku yang diharapkan"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "Langkah reproduksi (jika berlaku)"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "logs",
+      "attributes": {
+        "label": "Kesalahan lengkap, log, atau tangkapan layar"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "checks",
+      "attributes": {
+        "label": "Pemeriksaan",
+        "options": [
+          {
+            "label": "Laporan ini untuk Mac Intel.",
+            "required": true
+          },
+          {
+            "label": "Saya menguji versi resmi atau build tanpa perubahan dari repositori ini.",
+            "required": true
+          },
+          {
+            "label": "Saya telah memeriksa laporan yang ada untuk masalah yang sama.",
+            "required": true
+          }
+        ]
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

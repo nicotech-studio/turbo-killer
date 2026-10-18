@@ -1,0 +1,150 @@
+{
+  "name": "Tiếng Việt",
+  "description": "Báo cáo lỗi hoặc chia sẻ kết quả tương thích.",
+  "title": "[Report] ",
+  "body": [
+    {
+      "type": "dropdown",
+      "id": "report_type",
+      "attributes": {
+        "label": "Loại báo cáo",
+        "options": [
+          "Lỗi",
+          "Tương thích"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Phiên bản TurboKiller",
+        "placeholder": "1.2.0"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "mac",
+      "attributes": {
+        "label": "Mẫu máy Mac",
+        "placeholder": "MacBookPro16,1"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "cpu",
+      "attributes": {
+        "label": "CPU",
+        "placeholder": "Intel Core i7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "macos",
+      "attributes": {
+        "label": "Phiên bản macOS",
+        "placeholder": "macOS 15.7"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "sip",
+      "attributes": {
+        "label": "Bảo vệ tính toàn vẹn hệ thống (SIP)",
+        "options": [
+          "Bật",
+          "Tắt",
+          "Không rõ"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "compatibility_result",
+      "attributes": {
+        "label": "Tương thích",
+        "options": [
+          "Không áp dụng — lỗi",
+          "Hoạt động",
+          "Hoạt động một phần",
+          "Không hoạt động"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "Chi tiết và hành vi mong đợi"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "Các bước tái hiện (nếu có)"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "logs",
+      "attributes": {
+        "label": "Lỗi đầy đủ, nhật ký hoặc ảnh chụp màn hình"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "checks",
+      "attributes": {
+        "label": "Kiểm tra",
+        "options": [
+          {
+            "label": "Báo cáo này dành cho máy Mac Intel.",
+            "required": true
+          },
+          {
+            "label": "Tôi đã thử bản chính thức hoặc bản biên dịch không sửa đổi từ kho mã này.",
+            "required": true
+          },
+          {
+            "label": "Tôi đã kiểm tra các báo cáo hiện có về cùng sự cố.",
+            "required": true
+          }
+        ]
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

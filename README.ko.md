@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
 
 [![Latest release](https://img.shields.io/github/v/release/nicotech-studio/turbo-killer?display_name=tag&sort=semver&style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/nicotech-studio/turbo-killer/total?style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases)
@@ -37,11 +37,14 @@ TurboKiller는 Intel Mac용 무료 오픈 소스 메뉴 막대 앱입니다.
 
 App과 백그라운드 구성 요소는 Developer ID로 서명되어 있지만 현재 버전은 **Apple 공증을 받지 않았습니다**. 공식 저장소에서만 다운로드하고 SIP는 활성화 상태로 유지하세요.
 
-## 1.1.1 변경 사항
+## 릴리스 노트 · 1.2.0
 
-일부 Intel Mac에서 Turbo Boost를 제어하지 못하던 문제를 수정하고, 필요한 구성 요소의 검증 및 업데이트 처리를 개선했습니다. 해당 Mac에서 비활성화와 복원을 확인했습니다.
+- 메뉴 막대의 바람 아이콘을 유지하고 단색 배지로 Turbo Boost 켜짐, 꺼짐, 상태 알 수 없음을 표시합니다.
+- 상태와 조작에 집중한 간결한 창입니다. 지원되지 않는 Mac에서는 안내를 대신 표시하며 설정과 종료는 항상 사용할 수 있습니다.
+- 앱, 웹사이트, README 및 이 릴리스 노트에서 17개 현지화 버전을 지원하며 오른쪽에서 왼쪽 레이아웃의 아랍어와 히브리어를 포함합니다.
+- 시작, 잠자기 해제, 조작 후 및 백그라운드에서 주기적으로 상태를 갱신합니다.
 
-[릴리스 노트](docs/releases/1.1.1.md)
+[릴리스 노트](docs/releases/1.2.0/ko.md)
 
 ## 피드백
 
@@ -51,7 +54,7 @@ App과 백그라운드 구성 요소는 Developer ID로 서명되어 있지만 �
 
 SwiftUI App은 XPC로 권한이 있는 백그라운드 Helper와 통신합니다. Helper는 포함된 과거 커널 확장을 로드하거나 언로드하여 Turbo Boost를 제어합니다. 표시는 시스템의 실제 로드 상태에 기반하며 전체 확장 번들을 SHA-256으로 검증합니다.
 
-Xcode에서 `TurboKiller.xcodeproj`를 열어 빌드합니다. 포함된 과거 확장 번들은 변경하지 마세요. 필수 파일, 테스트 및 패키징 방법은 [무결성 유지보수 문서](docs/kext-integrity.md)를 참조하세요.
+Xcode에서 `TurboKiller.xcodeproj`를 열어 빌드합니다. 포함된 과거 확장 번들은 변경하지 마세요. 필수 파일, 테스트 및 패키징 방법은 [무결성 유지보수 문서](LegacyKextIntegrity.swift)를 참조하세요.
 
 ## 지원
 

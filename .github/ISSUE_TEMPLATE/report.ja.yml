@@ -21,7 +21,7 @@ body:
     id: version
     attributes:
       label: TurboKiller バージョン
-      placeholder: 例 1.1.0
+      placeholder: 例 1.2.0
     validations:
       required: true
 

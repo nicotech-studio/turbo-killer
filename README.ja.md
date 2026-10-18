@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
 
 [![Latest release](https://img.shields.io/github/v/release/nicotech-studio/turbo-killer?display_name=tag&sort=semver&style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/nicotech-studio/turbo-killer/total?style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases)
@@ -37,11 +37,14 @@ TurboKiller は Intel Mac 向けの無料・オープンソースのメニュー
 
 App とバックグラウンドコンポーネントは Developer ID 署名済みですが、現在のバージョンは **Apple 未公証**です。公式リポジトリからのみダウンロードし、SIP は有効のまま使用してください。
 
-## 1.1.1 の変更点
+## リリースノート · 1.2.0
 
-一部の Intel Mac で Turbo Boost を制御できなかった問題を修正し、必要なコンポーネントの検証と更新処理を改善しました。対象 Mac で無効化と復元を確認済みです。
+- メニューバーの風アイコンを固定し、単色のバッジで Turbo Boost の有効・無効・状態不明を表示。
+- 状態と操作に集中したコンパクトな画面。非対応の Mac では説明を表示し、設定と終了は常に利用可能。
+- アプリ、ウェブサイト、README、本リリースノートで17のローカライズに対応。右から左のレイアウトを備えたアラビア語とヘブライ語を含む。
+- 起動時、スリープ解除時、操作後、バックグラウンドでの定期的な状態更新。
 
-[リリースノート](docs/releases/1.1.1.md)
+[リリースノート](docs/releases/1.2.0/ja.md)
 
 ## フィードバック
 
@@ -51,7 +54,7 @@ App とバックグラウンドコンポーネントは Developer ID 署名済�
 
 SwiftUI の App は XPC 経由で特権バックグラウンド Helper と通信します。Helper が同梱の歴史的なカーネル拡張をロード・アンロードして Turbo Boost を制御します。表示はシステムの実際のロード状態に基づき、拡張全体を SHA-256 で検証します。
 
-Xcode で `TurboKiller.xcodeproj` を開いてビルドします。同梱の歴史的な拡張は変更せず保持してください。必要なファイル、テスト、パッケージ作成については[完全性の保守資料](docs/kext-integrity.md)を参照してください。
+Xcode で `TurboKiller.xcodeproj` を開いてビルドします。同梱の歴史的な拡張は変更せず保持してください。必要なファイル、テスト、パッケージ作成については[完全性の保守資料](LegacyKextIntegrity.swift)を参照してください。
 
 ## サポート
 

@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
 
 [![最新版本](https://img.shields.io/github/v/release/nicotech-studio/turbo-killer?display_name=tag&sort=semver&style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases/latest)
 [![下载量](https://img.shields.io/github/downloads/nicotech-studio/turbo-killer/total?style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases)
@@ -37,11 +37,14 @@ TurboKiller 是一款面向 Intel Mac 的免费开源菜单栏工具。
 
 App 和后台组件已使用 Developer ID 签名，但当前版本 **未通过 Apple 公证**。请仅从官方仓库下载，并保持 SIP 开启。
 
-## 1.1.1 更新
+## 发布说明 · 1.2.0
 
-修复部分 Intel Mac 无法正常控制 Turbo Boost 的问题，完善所需组件的检查和升级处理。修复已在受影响电脑上通过关闭与恢复测试。
+- 菜单栏保留固定风形图标，通过单色角标区分 Turbo Boost 已开启、已关闭和状态未知。
+- 精简弹窗，聚焦状态与操作；不支持的 Mac 改为显示说明，底部始终保留设置和退出。
+- App、官网、README 和本版本说明共支持 17 个本地化版本，包含从右到左布局的阿拉伯语和希伯来语。
+- 启动、唤醒、操作后及后台定时刷新状态。
 
-[版本说明](docs/releases/1.1.1.md)
+[发布说明](docs/releases/1.2.0/zh-CN.md)
 
 ## 问题反馈
 
@@ -51,7 +54,7 @@ App 和后台组件已使用 Developer ID 签名，但当前版本 **未通过 A
 
 应用使用 SwiftUI，通过 XPC 与具有管理员权限的后台 Helper 通信。Helper 加载或卸载内置的历史内核扩展来控制 Turbo Boost；界面读取系统中的实际加载状态，并对完整扩展包进行 SHA-256 校验。
 
-使用 Xcode 打开 `TurboKiller.xcodeproj` 即可构建。历史扩展包应保持原样；所需文件、测试和打包注意事项见[完整性维护文档](docs/kext-integrity.md)。
+使用 Xcode 打开 `TurboKiller.xcodeproj` 即可构建。历史扩展包应保持原样；所需文件、测试和打包注意事项见[完整性维护文档](LegacyKextIntegrity.swift)。
 
 ## 支持
 
