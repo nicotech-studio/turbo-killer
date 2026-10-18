@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 Tắt Turbo Boost để máy Mac yên tĩnh hơn và khôi phục khi bạn cần hiệu năng tối đa.
 
@@ -35,7 +35,7 @@ Xem trạng thái trên biểu tượng gió ở thanh menu
 - 17 phiên bản ngôn ngữ cho ứng dụng, trang web, README và ghi chú này, gồm tiếng Ả Rập và tiếng Do Thái với bố cục từ phải sang trái.
 - Cập nhật trạng thái khi khởi chạy, thức dậy, sau thao tác và định kỳ trong nền.
 
-[Ghi chú phát hành](docs/releases/1.2.0/vi.md)
+[Ghi chú phát hành](../../docs/releases/1.2.0/vi.md)
 
 ## Phản hồi
 
@@ -47,7 +47,7 @@ Vẫn đang thử nghiệm, đã kiểm tra trên một số máy Mac Intel. Kh�
 
 Ứng dụng thanh menu SwiftUI giao tiếp qua XPC với dịch vụ nền đặc quyền để nạp hoặc dỡ phần mở rộng nhân cũ đi kèm. Trạng thái phản ánh việc nạp phần mở rộng, không đo tần số CPU. Mở TurboKiller.xcodeproj trong Xcode để biên dịch. Giữ nguyên gói phần mở rộng lịch sử.
 
-[SHA-256](LegacyKextIntegrity.swift)
+[SHA-256](../../LegacyKextIntegrity.swift)
 
 ## Ủng hộ
 
@@ -57,4 +57,4 @@ TurboKiller miễn phí và có mã nguồn mở. Nếu ứng dụng hữu ích,
 
 ## Giấy phép
 
-[GPL-2.0](LICENSE) · [Thông báo của bên thứ ba](THIRD_PARTY_NOTICES.md)
+[GPL-2.0](../../LICENSE) · [Thông báo của bên thứ ba](../../THIRD_PARTY_NOTICES.md)

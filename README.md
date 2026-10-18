@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](README.md) | [简体中文](docs/readme/zh-CN.md) | [繁體中文](docs/readme/zh-TW.md) | [日本語](docs/readme/ja.md) | [한국어](docs/readme/ko.md) | [Deutsch](docs/readme/de.md) | [Français](docs/readme/fr.md) | [Español](docs/readme/es.md) | [Português (Brasil)](docs/readme/pt-BR.md) | [Português (Portugal)](docs/readme/pt-PT.md) | [Italiano](docs/readme/it.md) | [Русский](docs/readme/ru.md) | [Türkçe](docs/readme/tr.md) | [Bahasa Indonesia](docs/readme/id.md) | [Tiếng Việt](docs/readme/vi.md) | [العربية](docs/readme/ar.md) | [עברית](docs/readme/he.md)
 
 [![Latest release](https://img.shields.io/github/v/release/nicotech-studio/turbo-killer?display_name=tag&sort=semver&style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/nicotech-studio/turbo-killer/total?style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases)

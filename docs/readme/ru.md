@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 Отключайте Turbo Boost для более тихой работы Mac и включайте снова, когда нужна полная производительность.
 
@@ -35,7 +35,7 @@
 - 17 языковых версий приложения, сайта, README и этих примечаний, включая арабский и иврит с интерфейсом справа налево.
 - Обновление состояния при запуске, пробуждении, после операций и периодически в фоне.
 
-[Примечания к выпуску](docs/releases/1.2.0/ru.md)
+[Примечания к выпуску](../../docs/releases/1.2.0/ru.md)
 
 ## Обратная связь
 
@@ -47,7 +47,7 @@
 
 Приложение SwiftUI в строке меню взаимодействует по XPC с привилегированной службой, которая загружает или выгружает встроенное устаревшее расширение ядра. Состояние отражает загрузку расширения, а не измерение частоты процессора. Откройте TurboKiller.xcodeproj в Xcode для сборки. Сохраняйте исторический пакет расширения без изменений.
 
-[SHA-256](LegacyKextIntegrity.swift)
+[SHA-256](../../LegacyKextIntegrity.swift)
 
 ## Поддержать
 
@@ -57,4 +57,4 @@ TurboKiller — бесплатная программа с открытым ис
 
 ## Лицензия
 
-[GPL-2.0](LICENSE) · [Уведомления третьих сторон](THIRD_PARTY_NOTICES.md)
+[GPL-2.0](../../LICENSE) · [Уведомления третьих сторон](../../THIRD_PARTY_NOTICES.md)

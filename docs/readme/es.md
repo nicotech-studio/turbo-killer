@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 Desactiva Turbo Boost para tener un Mac más silencioso y restáuralo cuando necesites todo el rendimiento.
 
@@ -35,7 +35,7 @@ Estado visible en el icono de viento de la barra de menús
 - 17 versiones lingüísticas para la app, la web, el README y estas notas, incluidos árabe y hebreo con diseño de derecha a izquierda.
 - Actualización del estado al iniciar, al despertar, después de las operaciones y periódicamente en segundo plano.
 
-[Notas de la versión](docs/releases/1.2.0/es.md)
+[Notas de la versión](../../docs/releases/1.2.0/es.md)
 
 ## Comentarios
 
@@ -47,7 +47,7 @@ Todavía experimental, probado en algunos Mac con Intel. No se garantiza compati
 
 La app SwiftUI de la barra de menús se comunica por XPC con un servicio privilegiado que carga o descarga la extensión del kernel heredada incluida. El estado refleja la carga de la extensión, no una medición de frecuencia de la CPU. Abre TurboKiller.xcodeproj en Xcode para compilar. Conserva intacto el paquete histórico de la extensión.
 
-[SHA-256](LegacyKextIntegrity.swift)
+[SHA-256](../../LegacyKextIntegrity.swift)
 
 ## Apoyar
 
@@ -57,4 +57,4 @@ TurboKiller es gratis y de código abierto. Si te resulta útil, puedes invitarm
 
 ## Licencia
 
-[GPL-2.0](LICENSE) · [Avisos de terceros](THIRD_PARTY_NOTICES.md)
+[GPL-2.0](../../LICENSE) · [Avisos de terceros](../../THIRD_PARTY_NOTICES.md)

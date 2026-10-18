@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 Deaktiviere Turbo Boost für einen leiseren Mac und stelle es wieder her, wenn du volle Leistung brauchst.
 
@@ -35,7 +35,7 @@ Status direkt am Wind-Symbol in der Menüleiste
 - 17 Sprachversionen für App, Website, README und diese Versionshinweise, einschließlich Arabisch und Hebräisch mit Rechts-nach-links-Layout.
 - Statusaktualisierung beim Start, nach dem Ruhezustand, nach Aktionen und regelmäßig im Hintergrund.
 
-[Versionshinweise](docs/releases/1.2.0/de.md)
+[Versionshinweise](../../docs/releases/1.2.0/de.md)
 
 ## Rückmeldung
 
@@ -47,7 +47,7 @@ Experimentell und auf einigen Intel-Macs getestet. Nicht jede Hardware- und macO
 
 Die SwiftUI-Menüleisten-App kommuniziert über XPC mit einem privilegierten Hintergrunddienst. Dieser lädt oder entlädt die mitgelieferte ältere Kernelerweiterung. Der Status zeigt den Ladezustand der Erweiterung, keine gemessene CPU-Frequenz. Öffne TurboKiller.xcodeproj in Xcode zum Bauen. Bewahre das historische Erweiterungsbundle unverändert auf.
 
-[SHA-256](LegacyKextIntegrity.swift)
+[SHA-256](../../LegacyKextIntegrity.swift)
 
 ## Unterstützen
 
@@ -57,4 +57,4 @@ TurboKiller ist kostenlos und quelloffen. Wenn es dir hilft, kannst du mir einen
 
 ## Lizenz
 
-[GPL-2.0](LICENSE) · [Hinweise zu Drittanbietern](THIRD_PARTY_NOTICES.md)
+[GPL-2.0](../../LICENSE) · [Hinweise zu Drittanbietern](../../THIRD_PARTY_NOTICES.md)

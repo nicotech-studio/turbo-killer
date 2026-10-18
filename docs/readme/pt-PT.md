@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 Desative o Turbo Boost para ter um Mac mais silencioso e restaure-o quando precisar de todo o desempenho.
 
@@ -35,7 +35,7 @@ Estado visível no ícone de vento da barra de menus
 - 17 versões linguísticas na aplicação, no site, no README e nestas notas, incluindo árabe e hebraico com disposição da direita para a esquerda.
 - Atualização do estado ao abrir, ao sair do modo de pausa, após operações e periodicamente em segundo plano.
 
-[Notas da versão](docs/releases/1.2.0/pt-PT.md)
+[Notas da versão](../../docs/releases/1.2.0/pt-PT.md)
 
 ## Comentários
 
@@ -47,7 +47,7 @@ Ainda experimental, testado em alguns Macs Intel. Não se garante compatibilidad
 
 A aplicação SwiftUI da barra de menus comunica por XPC com um serviço privilegiado que carrega ou descarrega a extensão antiga do kernel incluída. O estado reflete o carregamento da extensão, sem medir a frequência da CPU. Abra TurboKiller.xcodeproj no Xcode para compilar. Mantenha o pacote histórico da extensão inalterado.
 
-[SHA-256](LegacyKextIntegrity.swift)
+[SHA-256](../../LegacyKextIntegrity.swift)
 
 ## Apoiar
 
@@ -57,4 +57,4 @@ O TurboKiller é gratuito e de código aberto. Se lhe for útil, pode oferecer-m
 
 ## Licença
 
-[GPL-2.0](LICENSE) · [Avisos de terceiros](THIRD_PARTY_NOTICES.md)
+[GPL-2.0](../../LICENSE) · [Avisos de terceiros](../../THIRD_PARTY_NOTICES.md)

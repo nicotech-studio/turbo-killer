@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 Daha sessiz bir Mac için Turbo Boost’u kapatın; tam performans gerektiğinde geri açın.
 
@@ -35,7 +35,7 @@ Durumu menü çubuğundaki rüzgâr simgesinden görün
 - Uygulama, site, README ve bu notlarda 17 dil sürümü; sağdan sola düzenle Arapça ve İbranice dâhil.
 - Başlangıçta, uykudan uyanınca, işlemlerden sonra ve düzenli aralıklarla arka planda durum yenileme.
 
-[Sürüm notları](docs/releases/1.2.0/tr.md)
+[Sürüm notları](../../docs/releases/1.2.0/tr.md)
 
 ## Geri bildirim
 
@@ -47,7 +47,7 @@ Deneyseldir ve bazı Intel Mac’lerde denenmiştir. Her donanım ve macOS yapı
 
 SwiftUI menü çubuğu uygulaması, XPC üzerinden ayrıcalıklı bir arka plan hizmetiyle iletişim kurar. Hizmet, birlikte gelen eski çekirdek uzantısını yükler veya bellekten kaldırır. Durum uzantının yüklenme durumunu gösterir, CPU frekansını ölçmez. Derlemek için TurboKiller.xcodeproj dosyasını Xcode’da açın. Tarihî uzantı paketini değiştirmeyin.
 
-[SHA-256](LegacyKextIntegrity.swift)
+[SHA-256](../../LegacyKextIntegrity.swift)
 
 ## Destekle
 
@@ -57,4 +57,4 @@ TurboKiller ücretsiz ve açık kaynaklıdır. İşinize yarıyorsa bana bir kah
 
 ## Lisans
 
-[GPL-2.0](LICENSE) · [Üçüncü taraf bildirimleri](THIRD_PARTY_NOTICES.md)
+[GPL-2.0](../../LICENSE) · [Üçüncü taraf bildirimleri](../../THIRD_PARTY_NOTICES.md)

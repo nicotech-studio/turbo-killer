@@ -2,7 +2,7 @@
 
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 أوقف Turbo Boost لجعل Mac أكثر هدوءًا، واستعده عندما تحتاج إلى الأداء الكامل.
 
@@ -37,7 +37,7 @@
 - 17 نسخة لغوية للتطبيق والموقع وREADME وهذه الملاحظات، بما فيها العربية والعبرية بتخطيط من اليمين إلى اليسار.
 - تحديث الحالة عند التشغيل والاستيقاظ وبعد العمليات وبشكل دوري في الخلفية.
 
-[ملاحظات الإصدار](docs/releases/1.2.0/ar.md)
+[ملاحظات الإصدار](../../docs/releases/1.2.0/ar.md)
 
 ## الملاحظات
 
@@ -49,7 +49,7 @@
 
 يتواصل تطبيق شريط القوائم المبني بـ SwiftUI عبر XPC مع خدمة خلفية ذات امتيازات تحمّل امتداد النواة القديم المضمّن أو تلغي تحميله. تعكس الحالة تحميل الامتداد ولا تقيس تردد المعالج. افتح TurboKiller.xcodeproj في Xcode للبناء. أبقِ حزمة الامتداد التاريخية دون تغيير.
 
-[SHA-256](LegacyKextIntegrity.swift)
+[SHA-256](../../LegacyKextIntegrity.swift)
 
 ## الدعم
 
@@ -59,6 +59,6 @@ TurboKiller مجاني ومفتوح المصدر. إذا أفادك، يمكنك
 
 ## الترخيص
 
-[GPL-2.0](LICENSE) · [إشعارات الجهات الخارجية](THIRD_PARTY_NOTICES.md)
+[GPL-2.0](../../LICENSE) · [إشعارات الجهات الخارجية](../../THIRD_PARTY_NOTICES.md)
 
 </div>

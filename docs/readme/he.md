@@ -2,7 +2,7 @@
 
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 כבו את Turbo Boost ל-Mac שקט יותר, ושחזרו אותו כשנדרשים ביצועים מלאים.
 
@@ -37,7 +37,7 @@
 - 17 גרסאות שפה ליישום, לאתר, ל-README ולהערות אלה, כולל ערבית ועברית עם פריסה מימין לשמאל.
 - רענון המצב בהפעלה, בהתעוררות, לאחר פעולות ובאופן תקופתי ברקע.
 
-[הערות גרסה](docs/releases/1.2.0/he.md)
+[הערות גרסה](../../docs/releases/1.2.0/he.md)
 
 ## משוב
 
@@ -49,7 +49,7 @@
 
 יישום שורת התפריטים ב-SwiftUI מתקשר באמצעות XPC עם שירות רקע בעל הרשאות שטוען או פורק את הרחבת הליבה הישנה המצורפת. המצב משקף את טעינת ההרחבה ואינו מודד את תדר המעבד. פתחו את TurboKiller.xcodeproj ב-Xcode לצורך בנייה. השאירו את חבילת ההרחבה ההיסטורית ללא שינוי.
 
-[SHA-256](LegacyKextIntegrity.swift)
+[SHA-256](../../LegacyKextIntegrity.swift)
 
 ## תמיכה
 
@@ -59,6 +59,6 @@ TurboKiller חינמי ובקוד פתוח. אם הוא עוזר לכם, אפש�
 
 ## רישיון
 
-[GPL-2.0](LICENSE) · [הודעות צד שלישי](THIRD_PARTY_NOTICES.md)
+[GPL-2.0](../../LICENSE) · [הודעות צד שלישי](../../THIRD_PARTY_NOTICES.md)
 
 </div>

@@ -1,12 +1,12 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 [![Latest release](https://img.shields.io/github/v/release/nicotech-studio/turbo-killer?display_name=tag&sort=semver&style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/nicotech-studio/turbo-killer/total?style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases)
 ![macOS 13+](https://img.shields.io/badge/macOS-13%2B-000000?style=flat-square&logo=apple&logoColor=white)
 ![Intel Mac](https://img.shields.io/badge/Mac-Intel-0071C5?style=flat-square&logo=intel&logoColor=white)
-[![GPL-2.0](https://img.shields.io/github/license/nicotech-studio/turbo-killer?style=flat-square)](LICENSE)
+[![GPL-2.0](https://img.shields.io/github/license/nicotech-studio/turbo-killer?style=flat-square)](../../LICENSE)
 
 TurboKiller는 Intel Mac용 무료 오픈 소스 메뉴 막대 앱입니다.
 
@@ -44,7 +44,7 @@ App과 백그라운드 구성 요소는 Developer ID로 서명되어 있지만 �
 - 앱, 웹사이트, README 및 이 릴리스 노트에서 17개 현지화 버전을 지원하며 오른쪽에서 왼쪽 레이아웃의 아랍어와 히브리어를 포함합니다.
 - 시작, 잠자기 해제, 조작 후 및 백그라운드에서 주기적으로 상태를 갱신합니다.
 
-[릴리스 노트](docs/releases/1.2.0/ko.md)
+[릴리스 노트](../../docs/releases/1.2.0/ko.md)
 
 ## 피드백
 
@@ -54,7 +54,7 @@ App과 백그라운드 구성 요소는 Developer ID로 서명되어 있지만 �
 
 SwiftUI App은 XPC로 권한이 있는 백그라운드 Helper와 통신합니다. Helper는 포함된 과거 커널 확장을 로드하거나 언로드하여 Turbo Boost를 제어합니다. 표시는 시스템의 실제 로드 상태에 기반하며 전체 확장 번들을 SHA-256으로 검증합니다.
 
-Xcode에서 `TurboKiller.xcodeproj`를 열어 빌드합니다. 포함된 과거 확장 번들은 변경하지 마세요. 필수 파일, 테스트 및 패키징 방법은 [무결성 유지보수 문서](LegacyKextIntegrity.swift)를 참조하세요.
+Xcode에서 `TurboKiller.xcodeproj`를 열어 빌드합니다. 포함된 과거 확장 번들은 변경하지 마세요. 필수 파일, 테스트 및 패키징 방법은 [무결성 유지보수 문서](../../LegacyKextIntegrity.swift)를 참조하세요.
 
 ## 지원
 
@@ -64,4 +64,4 @@ TurboKiller가 도움이 되었다면 개발을 지원할 수 있습니다:
 
 ## 라이선스
 
-[GPL-2.0](LICENSE). 포함된 구성 요소의 출처와 라이선스는 [서드 파티 고지](THIRD_PARTY_NOTICES.md)를 참조하세요. 수정 빌드는 수정본임을 명시하고 공식 릴리스로 오인되지 않도록 해야 합니다.
+[GPL-2.0](../../LICENSE). 포함된 구성 요소의 출처와 라이선스는 [서드 파티 고지](../../THIRD_PARTY_NOTICES.md)를 참조하세요. 수정 빌드는 수정본임을 명시하고 공식 릴리스로 오인되지 않도록 해야 합니다.

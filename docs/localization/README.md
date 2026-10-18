@@ -7,7 +7,9 @@ language codes to Xcode catalog identifiers (`zh-CN` → `zh-Hans`, `zh-TW` →
 For each language, keep these surfaces in sync:
 
 - App: `TurboKiller/Localizable.xcstrings` and Xcode `knownRegions`.
-- Product README: `README.<locale>.md` (`README.md` for English).
+- Product README: `docs/readme/<locale>.md` (`README.md` at the repository root for English).
+  READMEs describe the current version and are not split into version directories;
+  Git history and release tags preserve earlier copies.
 - Issue form: `.github/ISSUE_TEMPLATE/report.<locale>.yml`.
 - Release notes from 1.2.0 onward: `docs/releases/<version>/<locale>.md`.
 - Website repository: `src/locales.json`, `src/languages.js`, and

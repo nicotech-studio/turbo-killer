@@ -1,12 +1,12 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 [![最新版本](https://img.shields.io/github/v/release/nicotech-studio/turbo-killer?display_name=tag&sort=semver&style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases/latest)
 [![下載次數](https://img.shields.io/github/downloads/nicotech-studio/turbo-killer/total?style=flat-square)](https://github.com/nicotech-studio/turbo-killer/releases)
 ![macOS 13+](https://img.shields.io/badge/macOS-13%2B-000000?style=flat-square&logo=apple&logoColor=white)
 ![Intel Mac](https://img.shields.io/badge/Mac-Intel-0071C5?style=flat-square&logo=intel&logoColor=white)
-[![GPL-2.0](https://img.shields.io/github/license/nicotech-studio/turbo-killer?style=flat-square)](LICENSE)
+[![GPL-2.0](https://img.shields.io/github/license/nicotech-studio/turbo-killer?style=flat-square)](../../LICENSE)
 
 TurboKiller 是一款適用於 Intel Mac 的免費開源選單列工具。
 
@@ -44,7 +44,7 @@ App 和背景元件已使用 Developer ID 簽署，但目前版本 **未通過 A
 - App、官網、README 與本版本說明共支援 17 個在地化版本，包含由右至左版面的阿拉伯語與希伯來語。
 - 啟動、喚醒、操作後及背景定時更新狀態。
 
-[版本說明](docs/releases/1.2.0/zh-TW.md)
+[版本說明](../../docs/releases/1.2.0/zh-TW.md)
 
 ## 問題回報
 
@@ -54,7 +54,7 @@ App 和背景元件已使用 Developer ID 簽署，但目前版本 **未通過 A
 
 應用程式使用 SwiftUI，透過 XPC 與具有管理員權限的背景 Helper 通訊。Helper 載入或卸載內建的歷史核心延伸模組來控制 Turbo Boost；介面讀取系統中的實際載入狀態，並對完整套件進行 SHA-256 驗證。
 
-使用 Xcode 開啟 `TurboKiller.xcodeproj` 即可建置。歷史套件應保持原樣；所需檔案、測試與打包注意事項見[完整性維護文件](LegacyKextIntegrity.swift)。
+使用 Xcode 開啟 `TurboKiller.xcodeproj` 即可建置。歷史套件應保持原樣；所需檔案、測試與打包注意事項見[完整性維護文件](../../LegacyKextIntegrity.swift)。
 
 ## 支持
 
@@ -64,4 +64,4 @@ App 和背景元件已使用 Developer ID 簽署，但目前版本 **未通過 A
 
 ## 授權條款
 
-[GPL-2.0](LICENSE)。內建元件的來源與授權見[第三方聲明](THIRD_PARTY_NOTICES.md)。修改後的版本應明確標示，不應讓使用者誤以為是官方發行版。
+[GPL-2.0](../../LICENSE)。內建元件的來源與授權見[第三方聲明](../../THIRD_PARTY_NOTICES.md)。修改後的版本應明確標示，不應讓使用者誤以為是官方發行版。

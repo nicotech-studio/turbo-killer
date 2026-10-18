@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 Désactivez Turbo Boost pour un Mac plus silencieux et rétablissez-le lorsque vous avez besoin de toutes ses performances.
 
@@ -35,7 +35,7 @@ Choisissez « Désactiver Turbo Boost » pour réduire la chaleur et le bruit de
 - 17 versions linguistiques pour l’app, le site, le README et ces notes, dont l’arabe et l’hébreu avec une disposition de droite à gauche.
 - Actualisation de l’état au lancement, au réveil, après les opérations et régulièrement en arrière-plan.
 
-[Notes de version](docs/releases/1.2.0/fr.md)
+[Notes de version](../../docs/releases/1.2.0/fr.md)
 
 ## Retours
 
@@ -47,7 +47,7 @@ Encore expérimental, testé sur certains Mac Intel. La compatibilité avec tout
 
 L’app SwiftUI de la barre des menus communique par XPC avec un service privilégié qui charge ou décharge l’ancienne extension du noyau fournie. L’état reflète son chargement, sans mesurer la fréquence du processeur. Ouvrez TurboKiller.xcodeproj dans Xcode pour compiler. Conservez le paquet historique de l’extension sans modification.
 
-[SHA-256](LegacyKextIntegrity.swift)
+[SHA-256](../../LegacyKextIntegrity.swift)
 
 ## Soutenir
 
@@ -57,4 +57,4 @@ TurboKiller est gratuit et open source. S’il vous est utile, vous pouvez m’o
 
 ## Licence
 
-[GPL-2.0](LICENSE) · [Mentions des tiers](THIRD_PARTY_NOTICES.md)
+[GPL-2.0](../../LICENSE) · [Mentions des tiers](../../THIRD_PARTY_NOTICES.md)

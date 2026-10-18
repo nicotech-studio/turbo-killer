@@ -1,6 +1,6 @@
 # TurboKiller
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [Português (Portugal)](README.pt-PT.md) | [Italiano](README.it.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Bahasa Indonesia](README.id.md) | [Tiếng Việt](README.vi.md) | [العربية](README.ar.md) | [עברית](README.he.md)
+[English](../../README.md) | [简体中文](zh-CN.md) | [繁體中文](zh-TW.md) | [日本語](ja.md) | [한국어](ko.md) | [Deutsch](de.md) | [Français](fr.md) | [Español](es.md) | [Português (Brasil)](pt-BR.md) | [Português (Portugal)](pt-PT.md) | [Italiano](it.md) | [Русский](ru.md) | [Türkçe](tr.md) | [Bahasa Indonesia](id.md) | [Tiếng Việt](vi.md) | [العربية](ar.md) | [עברית](he.md)
 
 Disattiva Turbo Boost per un Mac più silenzioso e ripristinalo quando ti servono tutte le prestazioni.
 
@@ -35,7 +35,7 @@ Stato visibile sull’icona del vento nella barra dei menu
 - 17 versioni linguistiche per app, sito, README e queste note, inclusi arabo ed ebraico con layout da destra a sinistra.
 - Aggiornamento dello stato all’avvio, al risveglio, dopo le operazioni e periodicamente in background.
 
-[Note di rilascio](docs/releases/1.2.0/it.md)
+[Note di rilascio](../../docs/releases/1.2.0/it.md)
 
 ## Feedback
 
@@ -47,7 +47,7 @@ Ancora sperimentale, testato su alcuni Mac Intel. La compatibilità con tutte le
 
 L’app SwiftUI della barra dei menu comunica tramite XPC con un servizio privilegiato che carica o scarica l’estensione del kernel legacy inclusa. Lo stato riflette il caricamento dell’estensione, senza misurare la frequenza della CPU. Apri TurboKiller.xcodeproj in Xcode per compilare. Conserva invariato il bundle storico dell’estensione.
 
-[SHA-256](LegacyKextIntegrity.swift)
+[SHA-256](../../LegacyKextIntegrity.swift)
 
 ## Sostieni
 
@@ -57,4 +57,4 @@ TurboKiller è gratuito e open source. Se ti è utile, puoi offrirmi un caffè.
 
 ## Licenza
 
-[GPL-2.0](LICENSE) · [Note di terze parti](THIRD_PARTY_NOTICES.md)
+[GPL-2.0](../../LICENSE) · [Note di terze parti](../../THIRD_PARTY_NOTICES.md)
