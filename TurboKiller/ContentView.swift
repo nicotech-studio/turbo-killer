@@ -10,103 +10,81 @@ import SwiftUI
 
 @MainActor
 struct ContentView: View {
-    @StateObject private var model = TurboKillerModel()
+    @ObservedObject var model: TurboKillerModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            HStack(spacing: 12) {
-                Image(systemName: "wind")
-                    .font(.title2)
-                    .foregroundStyle(.tint)
-                    .frame(width: 28, height: 28)
+            if model.hardware == .intelMac {
+                HStack(spacing: 10) {
+                    Image(systemName: statusIcon)
 
-                VStack(alignment: .leading, spacing: 2) {
-                    Text("TurboKiller")
-                        .font(.headline)
-
-                    Text("Turbo Boost control for Intel Macs")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-            }
-
-            Divider()
-
-            HStack(spacing: 10) {
-                Image(systemName: compatibilityIcon)
-                    .foregroundStyle(compatibilityColor)
-
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(compatibilityTitle)
-                        .font(.subheadline.weight(.medium))
-
-                    Text(compatibilityDetail)
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-            }
-
-            Divider()
-
-            HStack(spacing: 10) {
-                Image(systemName: statusIcon)
-                    .foregroundStyle(statusColor)
-
-                VStack(alignment: .leading, spacing: 2) {
                     Text(statusTitle)
                         .font(.subheadline.weight(.medium))
-
-                    Text(statusDetail)
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-            }
-
-            if let requiredAction = model.requiredAction {
-                requiredActionView(requiredAction)
-            }
-
-            if let errorMessage = model.errorMessage {
-                HStack(alignment: .top, spacing: 8) {
-                    Image(systemName: "exclamationmark.triangle.fill")
-                        .foregroundStyle(.red)
-
-                    Text(errorMessage)
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
-                .padding(10)
-                .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .fill(.red.opacity(0.08))
-                )
-            }
 
-            Button {
-                Task {
-                    await model.toggleTurboBoost()
+                if let requiredAction = model.requiredAction {
+                    requiredActionView(requiredAction)
                 }
-            } label: {
-                HStack {
-                    if model.isBusy {
-                        ProgressView()
-                            .controlSize(.small)
 
-                        Text("Working…")
-                    } else {
-                        Image(systemName: toggleIcon)
-                        Text(toggleTitle)
+                if let errorMessage = model.errorMessage ?? model.statusReadError {
+                    HStack(alignment: .top, spacing: 8) {
+                        Image(systemName: "exclamationmark.triangle.fill")
+                            .foregroundStyle(.red)
+
+                        Text(errorMessage)
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
+                    .padding(10)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(.red.opacity(0.08))
+                    )
                 }
-                .frame(maxWidth: .infinity)
+
+                Button {
+                    Task {
+                        await model.toggleTurboBoost()
+                    }
+                } label: {
+                    HStack {
+                        if model.isBusy {
+                            ProgressView()
+                                .controlSize(.small)
+
+                            Text("Working…")
+                        } else {
+                            Image(systemName: toggleIcon)
+                            Text(toggleTitle)
+                        }
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.borderedProminent)
+                .fixedSize(horizontal: false, vertical: true)
+                .disabled(
+                    model.turboBoostStatus == .unavailable ||
+                    model.isBusy ||
+                    model.isRefreshing ||
+                    !model.helperReady
+                )
+
+            } else {
+                Label {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("TurboKiller is designed for Intel Macs only.")
+                            .font(.subheadline.weight(.medium))
+                        Text("Turbo Boost control is only available on supported Intel Macs.")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                } icon: {
+                    Image(systemName: "info.circle")
+                }
+                .fixedSize(horizontal: false, vertical: true)
             }
-            .buttonStyle(.borderedProminent)
-            .disabled(
-                model.turboBoostStatus == .unavailable ||
-                model.isBusy ||
-                !model.helperReady
-            )
 
             Divider()
 
@@ -139,10 +117,7 @@ struct ContentView: View {
         }
         .padding(16)
         .frame(width: 340)
-        .task {
-            await model.prepareHelper()
-            await model.refreshStatus()
-        }
+
     }
 
     // MARK: - Required actions
@@ -252,48 +227,6 @@ struct ContentView: View {
         NSWorkspace.shared.open(settingsURL)
     }
 
-    // MARK: - Hardware compatibility
-
-    private var compatibilityIcon: String {
-        switch model.hardware {
-        case .intelMac:
-            "checkmark.circle.fill"
-
-        case .appleSilicon:
-            "xmark.circle.fill"
-        }
-    }
-
-    private var compatibilityColor: Color {
-        switch model.hardware {
-        case .intelMac:
-            .green
-
-        case .appleSilicon:
-            .orange
-        }
-    }
-
-    private var compatibilityTitle: LocalizedStringResource {
-        switch model.hardware {
-        case .intelMac:
-            "Intel Mac detected"
-
-        case .appleSilicon:
-            "Apple silicon detected"
-        }
-    }
-
-    private var compatibilityDetail: LocalizedStringResource {
-        switch model.hardware {
-        case .intelMac:
-            "This Mac is compatible with TurboKiller's target platform."
-
-        case .appleSilicon:
-            "TurboKiller is designed for Intel Macs only."
-        }
-    }
-
     // MARK: - Turbo Boost status
 
     private var statusIcon: String {
@@ -309,42 +242,16 @@ struct ContentView: View {
         }
     }
 
-    private var statusColor: Color {
-        switch model.turboBoostStatus {
-        case .unavailable:
-            .secondary
-
-        case .enabled:
-            .orange
-
-        case .disabled:
-            .green
-        }
-    }
-
     private var statusTitle: LocalizedStringResource {
         switch model.turboBoostStatus {
         case .unavailable:
             "Turbo Boost status unavailable"
 
         case .enabled:
-            "Turbo Boost is active"
+            "Turbo Boost is enabled"
 
         case .disabled:
             "Turbo Boost is disabled"
-        }
-    }
-
-    private var statusDetail: LocalizedStringResource {
-        switch model.turboBoostStatus {
-        case .unavailable:
-            "Turbo Boost status could not be read."
-
-        case .enabled:
-            "Maximum CPU performance is available."
-
-        case .disabled:
-            "The CPU is running without Turbo Boost."
         }
     }
 
@@ -363,6 +270,8 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView(model: TurboKillerModel())
+    }
 }

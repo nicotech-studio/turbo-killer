@@ -3,6 +3,7 @@
 //  TurboKiller
 //
 
+import AppKit
 import Darwin
 import Combine
 import Foundation
@@ -41,31 +42,77 @@ final class TurboKillerModel: ObservableObject {
 
     @Published private(set) var turboBoostStatus: TurboBoostStatus = .unavailable
     @Published private(set) var errorMessage: String?
+    @Published private(set) var statusReadError: String?
     @Published private(set) var requiredAction: TurboKillerRequiredAction?
     @Published private(set) var isBusy = false
+    @Published private(set) var isRefreshing = false
     @Published private(set) var helperReady = false
 
     private let controller: any TurboBoostControlling
 
-    init() {
-        hardware = .current
-        controller = LegacyKextTurboBoostController()
+    private var monitoringTask: Task<Void, Never>?
+    private var wakeObserver: NSObjectProtocol?
+
+    init(
+        hardware: HardwareCompatibility = .current,
+        controller: any TurboBoostControlling = LegacyKextTurboBoostController(),
+        helperReady: Bool = false
+    ) {
+        self.hardware = hardware
+        self.controller = controller
+        self.helperReady = helperReady
+    }
+
+    func startMonitoring(pollInterval: Duration = .seconds(30)) {
+        guard monitoringTask == nil else { return }
+        wakeObserver = NSWorkspace.shared.notificationCenter.addObserver(
+            forName: NSWorkspace.didWakeNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            Task { @MainActor in await self?.refreshStatus() }
+        }
+        monitoringTask = Task { [weak self] in
+            // Read state at launch without opening the popover or requesting
+            // helper approval. Authorization remains an explicit UI flow.
+            while !Task.isCancelled {
+                await self?.refreshStatus()
+                do {
+                    try await Task.sleep(for: pollInterval)
+                } catch { break }
+            }
+        }
+    }
+
+    func stopMonitoring() {
+        monitoringTask?.cancel()
+        monitoringTask = nil
+        if let wakeObserver {
+            NSWorkspace.shared.notificationCenter.removeObserver(wakeObserver)
+            self.wakeObserver = nil
+        }
     }
 
     func refreshStatus() async {
+        guard hardware == .intelMac, !isBusy, !isRefreshing else { return }
+        isRefreshing = true
+        defer { isRefreshing = false }
         do {
             turboBoostStatus = try await controller.currentStatus()
+            statusReadError = nil
         } catch {
             turboBoostStatus = .unavailable
-            errorMessage = error.localizedDescription
+            statusReadError = error.localizedDescription
         }
     }
 
     func toggleTurboBoost() async {
-        guard !isBusy else {
+        guard hardware == .intelMac, !isBusy, !isRefreshing else {
             return
         }
-        
+        isBusy = true
+        defer { isBusy = false }
+
         if !helperReady {
             await prepareHelper()
 
@@ -74,13 +121,8 @@ final class TurboKillerModel: ObservableObject {
             }
         }
 
-        isBusy = true
         errorMessage = nil
         requiredAction = nil
-
-        defer {
-            isBusy = false
-        }
 
         do {
             try await performToggle()
@@ -121,6 +163,8 @@ final class TurboKillerModel: ObservableObject {
                 errorMessage = error.localizedDescription
             }
         }
+        // A failed operation may still have changed the extension state.
+        turboBoostStatus = (try? await controller.currentStatus()) ?? .unavailable
     }
 
     private func handleControlError(_ error: TurboBoostControlError) {

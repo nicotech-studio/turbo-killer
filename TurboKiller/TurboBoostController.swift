@@ -83,7 +83,7 @@ struct UnavailableTurboBoostController: TurboBoostControlling {
 
 /// Controls Turbo Boost by loading/unloading the historical
 /// DisableTurboBoost kernel extension.
-struct LegacyKextTurboBoostController: TurboBoostControlling {
+nonisolated struct LegacyKextTurboBoostController: TurboBoostControlling {
 
     private static let bundleIdentifier =
         "com.rugarciap.DisableTurboBoost"
@@ -93,7 +93,9 @@ struct LegacyKextTurboBoostController: TurboBoostControlling {
 
     func currentStatus() async throws -> TurboBoostStatus {
 #if arch(x86_64)
-        return try Self.readCurrentStatus()
+        return try await Task.detached(priority: .utility) {
+            try Self.readCurrentStatus()
+        }.value
 #else
         return .unavailable
 #endif
