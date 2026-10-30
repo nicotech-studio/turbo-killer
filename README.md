@@ -37,14 +37,14 @@ To update, quit the old App before replacing it in Applications.
 
 The App and its background helper are Developer ID signed, but this release is **not Apple-notarized**. Download only from the official repository and keep SIP enabled.
 
-## Release notes · 1.2.0
+## Release notes · 1.3.0
 
-- A fixed wind icon with a monochrome badge shows whether Turbo Boost is enabled, disabled, or its state is unknown.
-- A compact popover focuses on status and control. Unsupported Macs show an explanation instead; Settings and Quit remain available.
-- 17 localizations across the app, website, README and these notes, including Arabic and Hebrew with right-to-left layouts.
-- Status refreshes at launch, on wake, after operations and periodically in the background.
+- See the latest sample-average CPU frequency in the menu bar and compact popover.
+- View the last 5 minutes, 15 minutes or hour, with pale red/blue backgrounds showing Turbo Boost enabled/disabled and a base-frequency reference when reliably detected.
+- Choose 1, 2, 5 or 10-second sampling (default 2). Settings also control the menu bar number and background history recording.
+- Keep up to one hour of history in memory for the current session. Sleep, pauses and missing data leave gaps.
 
-[Release notes](docs/releases/1.2.0/en.md)
+[Release notes](docs/releases/1.3.0/en.md)
 
 ## Feedback
 

@@ -28,14 +28,14 @@ Scegli “Disattiva Turbo Boost” per ridurre calore e rumore delle ventole e �
 
 Stato visibile sull’icona del vento nella barra dei menu
 
-## Note di rilascio · 1.2.0
+## Note di rilascio · 1.3.0
 
-- Icona del vento fissa con indicatore monocromatico per Turbo Boost attivato, disattivato o stato sconosciuto.
-- Finestra compatta con stato e controllo; sui Mac non supportati appare un avviso al loro posto. Impostazioni ed Esci restano disponibili.
-- 17 versioni linguistiche per app, sito, README e queste note, inclusi arabo ed ebraico con layout da destra a sinistra.
-- Aggiornamento dello stato all’avvio, al risveglio, dopo le operazioni e periodicamente in background.
+- La barra dei menu e il pannello compatto mostrano la frequenza CPU media dell’ultimo intervallo di campionamento.
+- Consulta gli ultimi 5 minuti, 15 minuti o un’ora. Gli sfondi rosso/blu chiaro indicano Turbo Boost attivo/disattivo, con una linea della frequenza base quando identificata in modo affidabile.
+- Scegli intervalli di 1, 2, 5 o 10 secondi (predefinito: 2). Le impostazioni controllano anche il numero nella barra dei menu e la registrazione in background.
+- Fino a un’ora di cronologia resta in memoria per la sessione. Stop, pause e dati mancanti lasciano spazi vuoti.
 
-[Note di rilascio](../../docs/releases/1.2.0/it.md)
+[Note di rilascio](../../docs/releases/1.3.0/it.md)
 
 ## Feedback
 

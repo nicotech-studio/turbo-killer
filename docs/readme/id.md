@@ -28,14 +28,14 @@ Pilih “Nonaktifkan Turbo Boost” untuk mengurangi panas dan kebisingan kipas,
 
 Lihat status pada ikon angin di bar menu
 
-## Catatan rilis · 1.2.0
+## Catatan rilis · 1.3.0
 
-- Ikon angin tetap dengan lencana monokrom untuk Turbo Boost aktif, nonaktif, atau status tidak diketahui.
-- Jendela ringkas untuk status dan kontrol; Mac yang tidak didukung menampilkan penjelasan sebagai gantinya. Pengaturan dan Keluar tetap tersedia.
-- 17 versi bahasa untuk app, situs, README, dan catatan ini, termasuk bahasa Arab dan Ibrani dengan tata letak kanan ke kiri.
-- Pembaruan status saat peluncuran, bangun dari tidur, setelah operasi, dan secara berkala di latar belakang.
+- Bar menu dan panel ringkas menampilkan frekuensi CPU rata-rata dari interval sampel terakhir.
+- Lihat riwayat 5 menit, 15 menit, atau satu jam. Latar merah/biru muda menandai Turbo Boost aktif/nonaktif, dengan garis frekuensi dasar jika dapat diidentifikasi dengan andal.
+- Pilih interval 1, 2, 5, atau 10 detik (bawaan 2). Pengaturan juga mengendalikan angka bar menu dan perekaman latar belakang.
+- Riwayat hingga satu jam disimpan di memori selama sesi ini. Tidur, jeda, dan data yang hilang menyisakan celah.
 
-[Catatan rilis](../../docs/releases/1.2.0/id.md)
+[Catatan rilis](../../docs/releases/1.3.0/id.md)
 
 ## Umpan balik
 

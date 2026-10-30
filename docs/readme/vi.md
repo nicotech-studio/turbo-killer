@@ -28,14 +28,14 @@ Chọn “Tắt Turbo Boost” để giảm nhiệt và tiếng quạt; chọn �
 
 Xem trạng thái trên biểu tượng gió ở thanh menu
 
-## Ghi chú phát hành · 1.2.0
+## Ghi chú phát hành · 1.3.0
 
-- Biểu tượng gió cố định với dấu trạng thái đơn sắc: Turbo Boost bật, tắt hoặc chưa xác định.
-- Cửa sổ gọn hiển thị trạng thái và điều khiển; máy Mac không được hỗ trợ sẽ hiển thị giải thích thay thế. Cài đặt và Thoát luôn có sẵn.
-- 17 phiên bản ngôn ngữ cho ứng dụng, trang web, README và ghi chú này, gồm tiếng Ả Rập và tiếng Do Thái với bố cục từ phải sang trái.
-- Cập nhật trạng thái khi khởi chạy, thức dậy, sau thao tác và định kỳ trong nền.
+- Thanh menu và bảng bật lên gọn hiển thị tần số CPU trung bình của khoảng lấy mẫu gần nhất.
+- Xem lịch sử 5 phút, 15 phút hoặc một giờ. Nền đỏ/xanh nhạt cho biết Turbo Boost bật/tắt; đường tham chiếu tần số cơ bản xuất hiện khi xác định được đáng tin cậy.
+- Chọn khoảng lấy mẫu 1, 2, 5 hoặc 10 giây (mặc định 2). Cài đặt cũng điều khiển số trên thanh menu và ghi trong nền.
+- Lưu tối đa một giờ lịch sử trong bộ nhớ cho phiên hiện tại. Ngủ, tạm dừng và thiếu dữ liệu để lại khoảng trống.
 
-[Ghi chú phát hành](../../docs/releases/1.2.0/vi.md)
+[Ghi chú phát hành](../../docs/releases/1.3.0/vi.md)
 
 ## Phản hồi
 

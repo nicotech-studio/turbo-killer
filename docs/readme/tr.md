@@ -28,14 +28,14 @@ Isıyı ve fan sesini azaltmak için “Turbo Boost’u kapat”, performans iç
 
 Durumu menü çubuğundaki rüzgâr simgesinden görün
 
-## Sürüm notları · 1.2.0
+## Sürüm notları · 1.3.0
 
-- Sabit rüzgâr simgesinin üzerindeki tek renkli küçük işaret Turbo Boost’un açık, kapalı veya bilinmeyen durumunu gösterir.
-- Durum ve denetim odaklı küçük pencere; desteklenmeyen Mac’lerde bunun yerine açıklama gösterilir. Ayarlar ve Çıkış her zaman kullanılabilir.
-- Uygulama, site, README ve bu notlarda 17 dil sürümü; sağdan sola düzenle Arapça ve İbranice dâhil.
-- Başlangıçta, uykudan uyanınca, işlemlerden sonra ve düzenli aralıklarla arka planda durum yenileme.
+- Menü çubuğu ve kompakt açılır panel, son örnekleme aralığındaki ortalama CPU frekansını gösterir.
+- Son 5 dakika, 15 dakika veya bir saatlik geçmişi görüntüleyin. Açık kırmızı/mavi arka plan Turbo Boost açık/kapalı durumunu gösterir; güvenilir biçimde belirlenirse temel frekans çizgisi eklenir.
+- 1, 2, 5 veya 10 saniyelik aralık seçin (varsayılan 2). Ayarlar menü çubuğu sayısını ve arka plan kaydını da denetler.
+- Geçerli oturum için bellekte en fazla bir saatlik geçmiş tutulur. Uyku, duraklama ve eksik veriler boşluk bırakır.
 
-[Sürüm notları](../../docs/releases/1.2.0/tr.md)
+[Sürüm notları](../../docs/releases/1.3.0/tr.md)
 
 ## Geri bildirim
 
