@@ -15,12 +15,18 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             if model.hardware == .intelMac {
-                HStack(spacing: 10) {
-                    Image(systemName: statusIcon)
+                VStack(alignment: .leading, spacing: 8) {
+                    HStack(spacing: 10) {
+                        Image(systemName: statusIcon)
+                            .frame(width: 16)
 
-                    Text(statusTitle)
-                        .font(.subheadline.weight(.medium))
-                        .fixedSize(horizontal: false, vertical: true)
+                        Text(statusTitle)
+                            .font(.subheadline.weight(.medium))
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+
+                    CPUFrequencySummary(monitor: model.frequencyMonitor)
+                        .padding(.leading, 26)
                 }
 
                 if let requiredAction = model.requiredAction {
@@ -117,6 +123,8 @@ struct ContentView: View {
         }
         .padding(16)
         .frame(width: 340)
+        .onAppear { model.frequencyMonitor.setPopoverVisible(true) }
+        .onDisappear { model.frequencyMonitor.setPopoverVisible(false) }
 
     }
 

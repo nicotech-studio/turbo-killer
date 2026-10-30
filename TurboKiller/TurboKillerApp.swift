@@ -10,7 +10,7 @@ struct TurboKillerApp: App {
             ContentView(model: delegate.model)
                 .task {
                     await delegate.model.refreshStatus()
-                    if delegate.model.hardware == .intelMac {
+                    if delegate.model.hardware == .intelMac && !delegate.model.helperReady {
                         await delegate.model.prepareHelper()
                     }
                 }
@@ -20,7 +20,7 @@ struct TurboKillerApp: App {
         .menuBarExtraStyle(.window)
 
         Settings {
-            SettingsView()
+            SettingsView(monitor: delegate.model.frequencyMonitor)
         }
     }
 }
@@ -31,9 +31,19 @@ final class TurboKillerAppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         model.startMonitoring()
+        Task { await model.connectExistingHelper() }
     }
 
     func applicationWillTerminate(_ notification: Notification) {
         model.stopMonitoring()
+    }
+
+    func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
+        model.stopMonitoring()
+        Task {
+            await model.frequencyMonitor.shutdown()
+            sender.reply(toApplicationShouldTerminate: true)
+        }
+        return .terminateLater
     }
 }

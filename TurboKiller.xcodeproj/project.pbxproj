@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+        F13000013000000000000001 /* CPUFrequencyTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13000003000000000000001; };
+        F13000023000000000000001 /* CPUFrequencyTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13000003000000000000001; };
 		AC16B001305BB7230045D1C0 /* LegacyKextIntegrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16B000305BB7230045D1C0 /* LegacyKextIntegrity.swift */; };
 		AC16B002305BB7230045D1C0 /* LegacyKextIntegrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16B000305BB7230045D1C0 /* LegacyKextIntegrity.swift */; };
 		828CF370305BB3DE0045D1C0 /* TurboKillerHelper in Embed Helper Tools */ = {isa = PBXBuildFile; fileRef = 828CF364305BB2770045D1C0 /* TurboKillerHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -59,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+        F13000003000000000000001 /* CPUFrequencyTelemetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUFrequencyTelemetry.swift; sourceTree = "<group>"; };
 		AC16B000305BB7230045D1C0 /* LegacyKextIntegrity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyKextIntegrity.swift; sourceTree = "<group>"; };
 		82011CDA305AC37600C90179 /* TurboKiller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurboKiller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		828CF364305BB2770045D1C0 /* TurboKillerHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TurboKillerHelper; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +103,7 @@
 		82011CD1305AC37600C90179 = {
 			isa = PBXGroup;
 			children = (
+                F13000003000000000000001 /* CPUFrequencyTelemetry.swift */,
 				AC16B000305BB7230045D1C0 /* LegacyKextIntegrity.swift */,
 				828CF378305BB7230045D1C0 /* TurboKillerHelperProtocol.swift */,
 				828CF371305BB4AD0045D1C0 /* cc.nicotech.TurboKiller.Helper.plist */,
@@ -237,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13000013000000000000001 /* CPUFrequencyTelemetry.swift in Sources */,
 				AC16B001305BB7230045D1C0 /* LegacyKextIntegrity.swift in Sources */,
 				828CF37A305BB8410045D1C0 /* TurboKillerHelperProtocol.swift in Sources */,
 			);
@@ -246,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13000023000000000000001 /* CPUFrequencyTelemetry.swift in Sources */,
 				AC16B002305BB7230045D1C0 /* LegacyKextIntegrity.swift in Sources */,
 				828CF379305BB7230045D1C0 /* TurboKillerHelperProtocol.swift in Sources */,
 			);
@@ -391,7 +397,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = PPXL64QJ2V;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -405,7 +411,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.nicotech.TurboKiller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -425,7 +431,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = PPXL64QJ2V;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -439,7 +445,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.nicotech.TurboKiller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;

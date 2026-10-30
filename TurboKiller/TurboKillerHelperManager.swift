@@ -32,6 +32,7 @@ enum TurboKillerHelperManagerError: LocalizedError {
 
 @MainActor
 struct TurboKillerHelperManager {
+    static var isRegistered: Bool { service.status == .enabled }
     private static let plistName =
         "cc.nicotech.TurboKiller.Helper.plist"
 

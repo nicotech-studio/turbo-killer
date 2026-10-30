@@ -70,6 +70,21 @@ struct TurboKillerHelperClient {
         return result
     }
 
+    static func readCPUFrequency(interval: Int) async throws -> CPUFrequencyReading {
+        let result = try await perform(timeoutSeconds: UInt64(interval + 6)) { proxy, reply in
+            proxy.readCPUFrequency(intervalMilliseconds: NSNumber(value: interval * 1000), withReply: reply)
+        }
+        guard result.status == 0,
+              let data = result.output.data(using: .utf8),
+              let reading = try? JSONDecoder().decode(CPUFrequencyReading.self, from: data),
+              reading.isValid else { throw CPUFrequencyTelemetryError.invalidSample }
+        return reading
+    }
+
+    static func stopCPUFrequency() async {
+        _ = try? await perform { proxy, reply in proxy.stopCPUFrequency(withReply: reply) }
+    }
+
     static func prepareTurboBoostKext() async throws
         -> TurboKillerHelperCommandResult
     {
@@ -101,6 +116,7 @@ struct TurboKillerHelperClient {
     }
 
     private static func perform(
+        timeoutSeconds: UInt64 = 3,
         _ invoke: @escaping (
             TurboKillerHelperProtocol,
             @escaping (NSNumber, String) -> Void
@@ -129,7 +145,7 @@ struct TurboKillerHelperClient {
 
             Task {
                 try? await Task.sleep(
-                    nanoseconds: 3_000_000_000
+                    nanoseconds: timeoutSeconds * 1_000_000_000
                 )
 
                 guard gate.claim() else {

@@ -2,9 +2,9 @@
 set -euo pipefail
 
 # Local packaging only: never tags, pushes, publishes, installs or loads a Kext.
-# Usage: bash tools/build-release.sh [1.2.0]
+# Usage: bash tools/build-release.sh [1.3.0]
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-VERSION="${1:-1.2.0}"
+VERSION="${1:-1.3.0}"
 TEAM_ID="${TEAM_ID:-PPXL64QJ2V}"
 OUTPUT="${RELEASE_OUTPUT_DIR:-$ROOT/.release}"
 [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo 'Invalid version'; exit 1; }

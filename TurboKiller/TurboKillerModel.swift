@@ -39,38 +39,56 @@ enum TurboKillerRequiredAction: Equatable {
 @MainActor
 final class TurboKillerModel: ObservableObject {
     let hardware: HardwareCompatibility
+    let frequencyMonitor: CPUFrequencyMonitor
 
-    @Published private(set) var turboBoostStatus: TurboBoostStatus = .unavailable
+    @Published private(set) var turboBoostStatus: TurboBoostStatus = .unavailable {
+        didSet { frequencyMonitor.observeStatus(turboBoostStatus) }
+    }
     @Published private(set) var errorMessage: String?
     @Published private(set) var statusReadError: String?
     @Published private(set) var requiredAction: TurboKillerRequiredAction?
     @Published private(set) var isBusy = false
     @Published private(set) var isRefreshing = false
-    @Published private(set) var helperReady = false
+    @Published private(set) var helperReady = false {
+        didSet { frequencyMonitor.setHelperAvailable(helperReady && hardware == .intelMac) }
+    }
 
     private let controller: any TurboBoostControlling
 
     private var monitoringTask: Task<Void, Never>?
     private var wakeObserver: NSObjectProtocol?
+    private var sleepObserver: NSObjectProtocol?
 
     init(
         hardware: HardwareCompatibility = .current,
         controller: any TurboBoostControlling = LegacyKextTurboBoostController(),
-        helperReady: Bool = false
+        helperReady: Bool = false,
+        frequencyMonitor: CPUFrequencyMonitor? = nil
     ) {
         self.hardware = hardware
+        self.frequencyMonitor = frequencyMonitor ?? CPUFrequencyMonitor()
         self.controller = controller
         self.helperReady = helperReady
+        self.frequencyMonitor.setHelperAvailable(helperReady && hardware == .intelMac)
     }
 
     func startMonitoring(pollInterval: Duration = .seconds(30)) {
         guard monitoringTask == nil else { return }
+        if hardware == .intelMac { frequencyMonitor.start() }
         wakeObserver = NSWorkspace.shared.notificationCenter.addObserver(
             forName: NSWorkspace.didWakeNotification,
             object: nil,
             queue: .main
         ) { [weak self] _ in
-            Task { @MainActor in await self?.refreshStatus() }
+            Task { @MainActor in
+                self?.frequencyMonitor.wake()
+                await self?.refreshStatus()
+            }
+        }
+        sleepObserver = NSWorkspace.shared.notificationCenter.addObserver(
+            forName: NSWorkspace.willSleepNotification, object: nil, queue: .main
+        ) { [weak self] _ in
+            Task { @MainActor in self?.frequencyMonitor.sleep() }
         }
         monitoringTask = Task { [weak self] in
             // Read state at launch without opening the popover or requesting
@@ -85,12 +103,24 @@ final class TurboKillerModel: ObservableObject {
     }
 
     func stopMonitoring() {
+        frequencyMonitor.stop()
         monitoringTask?.cancel()
         monitoringTask = nil
         if let wakeObserver {
             NSWorkspace.shared.notificationCenter.removeObserver(wakeObserver)
             self.wakeObserver = nil
         }
+        if let sleepObserver {
+            NSWorkspace.shared.notificationCenter.removeObserver(sleepObserver)
+            self.sleepObserver = nil
+        }
+    }
+
+    /// At launch, only connect to an already registered, compatible helper.
+    /// Registration/migration continues through the existing popover flow.
+    func connectExistingHelper() async {
+        guard hardware == .intelMac, TurboKillerHelperManager.isRegistered else { return }
+        if (try? await TurboKillerHelperClient.healthCheck()) != nil { helperReady = true }
     }
 
     func refreshStatus() async {
@@ -111,6 +141,7 @@ final class TurboKillerModel: ObservableObject {
             return
         }
         isBusy = true
+        frequencyMonitor.observeStatus(.unavailable)
         defer { isBusy = false }
 
         if !helperReady {

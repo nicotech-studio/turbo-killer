@@ -4,12 +4,17 @@ import SwiftUI
 import WebKit
 
 struct SettingsView: View {
+    @ObservedObject var monitor: CPUFrequencyMonitor
+
     var body: some View {
         TabView {
             GeneralSettingsView()
                 .tabItem {
                     Label("General", systemImage: "gearshape")
                 }
+
+            FrequencySettingsView(monitor: monitor)
+                .tabItem { Label("Monitoring", systemImage: "waveform.path.ecg") }
 
             AboutSettingsView()
                 .tabItem {

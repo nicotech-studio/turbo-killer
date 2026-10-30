@@ -20,6 +20,17 @@ final class TurboKillerHelperService:
     NSObject,
     TurboKillerHelperProtocol
 {
+    private let frequencySampler = CPUFrequencySampler()
+
+    func readCPUFrequency(intervalMilliseconds: NSNumber,
+                          withReply reply: @escaping (NSNumber, String) -> Void) {
+        frequencySampler.nextSample(intervalMilliseconds: intervalMilliseconds.intValue, reply: reply)
+    }
+
+    func stopCPUFrequency(withReply reply: @escaping (NSNumber, String) -> Void) {
+        frequencySampler.stop(reply: reply)
+    }
+
     func healthCheck(
         withReply reply: @escaping (NSNumber, String) -> Void
     ) {

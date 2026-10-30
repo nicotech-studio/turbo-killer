@@ -18,10 +18,11 @@ locales=json.loads((root/'docs/localization/languages.json').read_text())
 plistlib.dump({'CFBundleIdentifier':'cc.nicotech.TurboKiller.Preview','CFBundleExecutable':'Preview','CFBundleDevelopmentRegion':'en','CFBundleLocalizations':[x['app'] for x in locales]},open(bundle/'Contents/Info.plist','wb'))
 PY
 xcrun swiftc -parse-as-library -module-cache-path "$WORK/modules" \
+  "$ROOT/TurboKiller/CPUBaseFrequency.swift" "$ROOT/CPUFrequencyTelemetry.swift" "$ROOT/TurboKiller/CPUFrequencyMonitor.swift" \
   "$ROOT/LegacyKextIntegrity.swift" "$ROOT/TurboKillerHelperProtocol.swift" \
   "$ROOT/TurboKiller/TurboBoostController.swift" "$ROOT/TurboKiller/TurboKillerModel.swift" \
   "$ROOT/TurboKiller/TurboKillerHelperClient.swift" "$ROOT/TurboKiller/TurboKillerHelperManager.swift" \
-  "$ROOT/TurboKiller/ContentView.swift" "$ROOT/TurboKiller/SettingsView.swift" \
+  "$ROOT/TurboKiller/FrequencyViews.swift" "$ROOT/TurboKiller/ContentView.swift" "$ROOT/TurboKiller/SettingsView.swift" \
   "$ROOT/TurboKiller/TurboKillerMenuBarLabel.swift" "$ROOT/tools/RenderPreview.swift" \
   -o "$BUNDLE/Contents/MacOS/Preview"
 while IFS=$'\t' read -r id app; do
