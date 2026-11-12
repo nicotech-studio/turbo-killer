@@ -28,15 +28,6 @@ Isıyı ve fan sesini azaltmak için “Turbo Boost’u kapat”, performans iç
 
 Durumu menü çubuğundaki rüzgâr simgesinden görün
 
-## Sürüm notları · 1.3.0
-
-- Menü çubuğu ve kompakt açılır panel, son örnekleme aralığındaki ortalama CPU frekansını gösterir.
-- Son 5 dakika, 15 dakika veya bir saatlik geçmişi görüntüleyin. Açık kırmızı/mavi arka plan Turbo Boost açık/kapalı durumunu gösterir; güvenilir biçimde belirlenirse temel frekans çizgisi eklenir.
-- 1, 2, 5 veya 10 saniyelik aralık seçin (varsayılan 2). Ayarlar menü çubuğu sayısını ve arka plan kaydını da denetler.
-- Geçerli oturum için bellekte en fazla bir saatlik geçmiş tutulur. Uyku, duraklama ve eksik veriler boşluk bırakır.
-
-[Sürüm notları](../../docs/releases/1.3.0/tr.md)
-
 ## Geri bildirim
 
 Deneyseldir ve bazı Intel Mac’lerde denenmiştir. Her donanım ve macOS yapılandırmasıyla uyumluluk garanti edilmez. Sorunları GitHub’da Mac modeli, macOS ve uygulama sürümleri ve tam hata metni veya ekran görüntüsüyle bildirin. Başarılı uyumluluk bildirimleri de değerlidir.

@@ -28,15 +28,6 @@ Chọn “Tắt Turbo Boost” để giảm nhiệt và tiếng quạt; chọn �
 
 Xem trạng thái trên biểu tượng gió ở thanh menu
 
-## Ghi chú phát hành · 1.3.0
-
-- Thanh menu và bảng bật lên gọn hiển thị tần số CPU trung bình của khoảng lấy mẫu gần nhất.
-- Xem lịch sử 5 phút, 15 phút hoặc một giờ. Nền đỏ/xanh nhạt cho biết Turbo Boost bật/tắt; đường tham chiếu tần số cơ bản xuất hiện khi xác định được đáng tin cậy.
-- Chọn khoảng lấy mẫu 1, 2, 5 hoặc 10 giây (mặc định 2). Cài đặt cũng điều khiển số trên thanh menu và ghi trong nền.
-- Lưu tối đa một giờ lịch sử trong bộ nhớ cho phiên hiện tại. Ngủ, tạm dừng và thiếu dữ liệu để lại khoảng trống.
-
-[Ghi chú phát hành](../../docs/releases/1.3.0/vi.md)
-
 ## Phản hồi
 
 Vẫn đang thử nghiệm, đã kiểm tra trên một số máy Mac Intel. Không đảm bảo tương thích với mọi cấu hình phần cứng và macOS. Báo cáo sự cố trên GitHub kèm mẫu máy Mac, phiên bản macOS và ứng dụng, cùng lỗi đầy đủ hoặc ảnh chụp màn hình. Chúng tôi cũng hoan nghênh báo cáo hoạt động thành công.

@@ -37,21 +37,6 @@ To check for updates, open **Settings → About → Check for Updates…**.
 
 The App and its background helper are Developer ID signed, but this release is **not Apple-notarized**. Download only from the official repository and keep SIP enabled.
 
-## Release notes · 1.3.1
-
-- Check for updates automatically or from Settings. When an update is available, review the release notes and install it in the App.
-
-[Release notes](docs/releases/1.3.1/en.md)
-
-## Release notes · 1.3.0
-
-- See the latest sample-average CPU frequency in the menu bar and compact popover.
-- View the last 5 minutes, 15 minutes or hour, with pale red/blue backgrounds showing Turbo Boost enabled/disabled and a base-frequency reference when reliably detected.
-- Choose 1, 2, 5 or 10-second sampling (default 2). Settings also control the menu bar number and background history recording.
-- Keep up to one hour of history in memory for the current session. Sleep, pauses and missing data leave gaps.
-
-[Release notes](docs/releases/1.3.0/en.md)
-
 ## Feedback
 
 If it does not work on your Mac, [open an issue](https://github.com/nicotech-studio/turbo-killer/issues) with your Mac model, macOS version and the complete error or a screenshot. Successful compatibility reports are welcome too.

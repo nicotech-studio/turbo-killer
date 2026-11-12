@@ -28,15 +28,6 @@ Wähle „Turbo Boost deaktivieren“ für weniger Wärme und Lüftergeräusche 
 
 Status direkt am Wind-Symbol in der Menüleiste
 
-## Versionshinweise · 1.3.0
-
-- Die Menüleiste und das kompakte Popover zeigen die durchschnittliche CPU-Frequenz des letzten Messintervalls.
-- Verlauf der letzten 5 Minuten, 15 Minuten oder Stunde. Hellrote/blaue Hintergründe zeigen Turbo Boost aktiviert/deaktiviert; bei verlässlicher Erkennung erscheint eine Basisfrequenz-Referenzlinie.
-- Messintervalle von 1, 2, 5 oder 10 Sekunden (Standard: 2). Einstellungen steuern auch die Menüleistenanzeige und Hintergrundaufzeichnung.
-- Bis zu eine Stunde Verlauf bleibt für diese Sitzung im Arbeitsspeicher. Ruhezustand, Pausen und fehlende Daten erscheinen als Lücken.
-
-[Versionshinweise](../../docs/releases/1.3.0/de.md)
-
 ## Rückmeldung
 
 Experimentell und auf einigen Intel-Macs getestet. Nicht jede Hardware- und macOS-Konfiguration ist kompatibel. Melde Probleme mit Mac-Modell, macOS-Version, App-Version und vollständiger Fehlermeldung oder Bildschirmfoto auf GitHub. Auch erfolgreiche Tests sind willkommen.

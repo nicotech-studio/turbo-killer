@@ -28,15 +28,6 @@ Choisissez « Désactiver Turbo Boost » pour réduire la chaleur et le bruit de
 
 État visible sur l’icône de vent de la barre des menus
 
-## Notes de version · 1.3.0
-
-- La barre des menus et le panneau compact affichent la fréquence CPU moyenne du dernier intervalle mesuré.
-- Consultez les 5 dernières minutes, 15 minutes ou dernière heure. Les fonds rouge/bleu pâle indiquent Turbo Boost activé/désactivé ; une référence de fréquence de base apparaît si elle est identifiée de façon fiable.
-- Choisissez une mesure toutes les 1, 2, 5 ou 10 secondes (2 par défaut). Les réglages contrôlent aussi le nombre dans la barre des menus et l’enregistrement en arrière-plan.
-- Jusqu’à une heure d’historique reste en mémoire pour la session. Veille, pauses et données absentes apparaissent comme des lacunes.
-
-[Notes de version](../../docs/releases/1.3.0/fr.md)
-
 ## Retours
 
 Encore expérimental, testé sur certains Mac Intel. La compatibilité avec toutes les configurations matérielles et macOS n’est pas garantie. Signalez les problèmes sur GitHub avec le modèle de Mac, les versions de macOS et de l’app, ainsi que l’erreur complète ou une capture d’écran. Les retours de compatibilité réussie sont aussi bienvenus.

@@ -28,15 +28,6 @@ Pilih “Nonaktifkan Turbo Boost” untuk mengurangi panas dan kebisingan kipas,
 
 Lihat status pada ikon angin di bar menu
 
-## Catatan rilis · 1.3.0
-
-- Bar menu dan panel ringkas menampilkan frekuensi CPU rata-rata dari interval sampel terakhir.
-- Lihat riwayat 5 menit, 15 menit, atau satu jam. Latar merah/biru muda menandai Turbo Boost aktif/nonaktif, dengan garis frekuensi dasar jika dapat diidentifikasi dengan andal.
-- Pilih interval 1, 2, 5, atau 10 detik (bawaan 2). Pengaturan juga mengendalikan angka bar menu dan perekaman latar belakang.
-- Riwayat hingga satu jam disimpan di memori selama sesi ini. Tidur, jeda, dan data yang hilang menyisakan celah.
-
-[Catatan rilis](../../docs/releases/1.3.0/id.md)
-
 ## Umpan balik
 
 Masih eksperimental dan telah diuji pada beberapa Mac Intel. Kompatibilitas dengan semua konfigurasi perangkat keras dan macOS tidak dijamin. Laporkan masalah di GitHub dengan model Mac, versi macOS dan app, serta kesalahan lengkap atau tangkapan layar. Laporan keberhasilan kompatibilitas juga diterima.
