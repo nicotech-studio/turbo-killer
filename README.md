@@ -27,7 +27,7 @@ Turn off Turbo Boost when you want a quieter, cooler Mac, and turn it back on wh
 3. If prompted, allow TurboKiller to run in the background under **General → Login Items & Extensions**.
 4. Follow any additional system-extension approval or restart prompts.
 
-To update, quit the old App before replacing it in Applications.
+To check for updates, open **Settings → About → Check for Updates…**.
 
 ## Use
 
@@ -36,6 +36,12 @@ To update, quit the old App before replacing it in Applications.
 - Check the displayed status after an operation. If it reports an error, do not repeatedly click the switch.
 
 The App and its background helper are Developer ID signed, but this release is **not Apple-notarized**. Download only from the official repository and keep SIP enabled.
+
+## Release notes · 1.3.1
+
+- Check for updates automatically or from Settings. When an update is available, review the release notes and install it in the App.
+
+[Release notes](docs/releases/1.3.1.md)
 
 ## Release notes · 1.3.0
 
@@ -55,6 +61,8 @@ If it does not work on your Mac, [open an issue](https://github.com/nicotech-stu
 The SwiftUI menu bar App communicates with a privileged background helper over XPC. The helper loads or unloads a bundled legacy kernel extension to control Turbo Boost. The displayed state comes from the system's actual loaded-extension state, and the full extension bundle is checked with SHA-256.
 
 Open `TurboKiller.xcodeproj` in Xcode to build. Preserve the historical extension bundle unchanged; see [bundle integrity and tests](LegacyKextIntegrity.swift) for the required files and packaging checks.
+
+To prepare a release, see [building and publishing updates](docs/development/updates.md).
 
 ## Support
 

@@ -2,12 +2,23 @@
 set -euo pipefail
 
 # Local packaging only: never tags, pushes, publishes, installs or loads a Kext.
-# Usage: bash tools/build-release.sh [1.3.0]
+# Usage: bash tools/build-release.sh [1.3.1] [build-number]
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-VERSION="${1:-1.3.0}"
+VERSION="${1:-1.3.1}"
+BUILD_NUMBER="${2:-}"
 TEAM_ID="${TEAM_ID:-PPXL64QJ2V}"
 OUTPUT="${RELEASE_OUTPUT_DIR:-$ROOT/.release}"
 [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo 'Invalid version'; exit 1; }
+build_settings=(CODE_SIGNING_ALLOWED=NO "MARKETING_VERSION=$VERSION")
+if [[ -n "$BUILD_NUMBER" ]]; then
+  [[ "$BUILD_NUMBER" =~ ^[1-9][0-9]*$ ]] || { echo 'Invalid build number'; exit 1; }
+  build_settings+=("CURRENT_PROJECT_VERSION=$BUILD_NUMBER")
+fi
+if [[ -n "${SPARKLE_PACKAGES_DIR:-}" ]]; then
+  package_options=(-clonedSourcePackagesDirPath "$SPARKLE_PACKAGES_DIR")
+else
+  package_options=()
+fi
 DMG="$OUTPUT/TurboKiller-$VERSION.dmg"
 [[ ! -e "$DMG" ]] || { echo "Refusing to overwrite $DMG"; exit 1; }
 
@@ -21,6 +32,7 @@ STAGE="$WORK/stage"
 MOUNT="$WORK/mounted"
 APP="$STAGE/TurboKiller.app"
 HELPER="$APP/Contents/MacOS/TurboKillerHelper"
+SPARKLE="$APP/Contents/Frameworks/Sparkle.framework"
 KEXT_RELATIVE="Contents/Resources/DisableTurboBoost.64bits.kext"
 MOUNTED=false
 cleanup() {
@@ -38,7 +50,8 @@ xcrun swiftc "$ROOT/LegacyKextIntegrity.swift" "$ROOT/Tests/LegacyKextIntegrityT
 xcodebuild -quiet -project "$ROOT/TurboKiller.xcodeproj" -scheme TurboKiller \
   -configuration Release -destination 'generic/platform=macOS' \
   -derivedDataPath "$WORK/DerivedData" -archivePath "$WORK/TurboKiller.xcarchive" \
-  CODE_SIGNING_ALLOWED=NO MARKETING_VERSION="$VERSION" archive
+  -onlyUsePackageVersionsFromResolvedFile \
+  ${package_options[@]+"${package_options[@]}"} "${build_settings[@]}" archive
 
 ditto "$WORK/TurboKiller.xcarchive/Products/Applications/TurboKiller.app" "$APP"
 "$WORK/verify-kext" "$APP/$KEXT_RELATIVE"
@@ -46,10 +59,27 @@ ditto "$WORK/TurboKiller.xcarchive/Products/Applications/TurboKiller.app" "$APP"
 [[ "$(lipo -archs "$HELPER")" == x86_64 ]]
 [[ "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$APP/Contents/Info.plist")" == "$VERSION" ]]
 [[ "$(/usr/libexec/PlistBuddy -c 'Print :LSRequiresNativeExecution' "$APP/Contents/Info.plist")" == true ]]
+if [[ -n "$BUILD_NUMBER" ]]; then
+  [[ "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$APP/Contents/Info.plist")" == "$BUILD_NUMBER" ]]
+fi
 
-# Sign the nested Helper before the App, without --deep: keep the Kext unsigned.
-codesign --force --options runtime --timestamp --sign "$IDENTITY" "$HELPER"
-codesign --force --options runtime --timestamp --sign "$IDENTITY" "$APP"
+# Sign nested code from the inside out. Leave the historical Kext unchanged.
+sign_code() {
+  codesign --force --options runtime --timestamp --sign "$IDENTITY" "$1"
+}
+
+[[ -x "$SPARKLE/Versions/B/Autoupdate" && -d "$SPARKLE/Versions/B/Updater.app" ]]
+sign_code "$SPARKLE/Versions/B/Autoupdate"
+sign_code "$SPARKLE/Versions/B/Updater.app"
+for service in "$SPARKLE/Versions/B/XPCServices/"*.xpc; do
+  if [[ -d "$service" ]]; then
+    sign_code "$service"
+  fi
+done
+sign_code "$SPARKLE"
+sign_code "$HELPER"
+sign_code "$APP"
+codesign --verify --deep --strict --verbose=2 "$SPARKLE"
 codesign --verify --strict --verbose=2 "$HELPER"
 codesign --verify --strict --verbose=2 "$APP"
 "$WORK/verify-kext" "$APP/$KEXT_RELATIVE"
@@ -64,6 +94,7 @@ hdiutil attach -readonly -nobrowse -noautoopen -mountpoint "$MOUNT" "$DMG"
 MOUNTED=true
 codesign --verify --strict --verbose=2 "$MOUNT/TurboKiller.app"
 codesign --verify --strict --verbose=2 "$MOUNT/TurboKiller.app/Contents/MacOS/TurboKillerHelper"
+codesign --verify --deep --strict --verbose=2 "$MOUNT/TurboKiller.app/Contents/Frameworks/Sparkle.framework"
 "$WORK/verify-kext" "$MOUNT/TurboKiller.app/$KEXT_RELATIVE"
 hdiutil detach "$MOUNT"
 MOUNTED=false

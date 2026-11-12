@@ -5,10 +5,12 @@ import WebKit
 
 struct SettingsView: View {
     @ObservedObject var monitor: CPUFrequencyMonitor
+    var checkForUpdates: AnyView? = nil
+    var automaticUpdateChecks: AnyView? = nil
 
     var body: some View {
         TabView {
-            GeneralSettingsView()
+            GeneralSettingsView(automaticUpdateChecks: automaticUpdateChecks)
                 .tabItem {
                     Label("General", systemImage: "gearshape")
                 }
@@ -16,7 +18,7 @@ struct SettingsView: View {
             FrequencySettingsView(monitor: monitor)
                 .tabItem { Label("Monitoring", systemImage: "waveform.path.ecg") }
 
-            AboutSettingsView()
+            AboutSettingsView(checkForUpdates: checkForUpdates)
                 .tabItem {
                     Label("About", systemImage: "info.circle")
                 }
@@ -33,6 +35,8 @@ struct SettingsView: View {
 // MARK: - General
 
 private struct GeneralSettingsView: View {
+    let automaticUpdateChecks: AnyView?
+
     @State private var launchAtLogin =
         SMAppService.mainApp.status == .enabled
 
@@ -74,6 +78,8 @@ private struct GeneralSettingsView: View {
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
             }
+
+            automaticUpdateChecks
 
             if let launchAtLoginError {
                 Section {
@@ -129,6 +135,8 @@ private struct GeneralSettingsView: View {
 // MARK: - About
 
 private struct AboutSettingsView: View {
+    let checkForUpdates: AnyView?
+
     @State private var showingSupport = false
     @State private var diagnosticsCopied = false
 
@@ -148,6 +156,8 @@ private struct AboutSettingsView: View {
 
                     Text(versionText)
                         .foregroundStyle(.secondary)
+
+                    checkForUpdates?.padding(.vertical, 4)
 
                     Text(
                         "Turbo Boost control for Intel Macs"

@@ -2,6 +2,10 @@
 
 TurboKiller includes third-party software that was not originally authored by NicoTech Studio.
 
+## Sparkle
+
+TurboKiller uses [Sparkle](https://sparkle-project.org/) for software updates. Its [license and third-party notices](TurboKiller/Sparkle-LICENSE.txt) are included in the application bundle.
+
 ## DisableTurboBoost.64bits.kext
 
 TurboKiller redistributes a historical copy of:
