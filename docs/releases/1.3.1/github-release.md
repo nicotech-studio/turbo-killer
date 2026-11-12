@@ -1,0 +1,10 @@
+# TurboKiller v1.3.1
+
+[English](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/en.md) · [简体中文](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/zh-CN.md) · [繁體中文](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/zh-TW.md) · [日本語](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/ja.md) · [한국어](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/ko.md) · [Deutsch](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/de.md) · [Français](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/fr.md) · [Español](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/es.md) · [Português (Brasil)](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/pt-BR.md) · [Português (Portugal)](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/pt-PT.md) · [Italiano](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/it.md) · [Русский](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/ru.md) · [Türkçe](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/tr.md) · [Bahasa Indonesia](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/id.md) · [Tiếng Việt](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/vi.md) · [العربية](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/ar.md) · [עברית](https://github.com/nicotech-studio/turbo-killer/blob/main/docs/releases/1.3.1/he.md)
+
+- TurboKiller checks for new versions while it runs. You can turn off automatic checks in **Settings → General**, or check at any time under **Settings → About**.
+- When an update is available, you can read the release notes, install it, and reopen TurboKiller from the update window.
+
+### SHA-256 · TurboKiller.dmg
+
+`428fc86a12a6fea0209c108f50cb23eaac0f203eac5ee386ab8d136a1069c870`

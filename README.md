@@ -41,7 +41,7 @@ The App and its background helper are Developer ID signed, but this release is *
 
 - Check for updates automatically or from Settings. When an update is available, review the release notes and install it in the App.
 
-[Release notes](docs/releases/1.3.1.md)
+[Release notes](docs/releases/1.3.1/en.md)
 
 ## Release notes · 1.3.0
 
