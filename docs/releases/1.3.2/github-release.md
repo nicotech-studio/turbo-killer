@@ -1,0 +1,9 @@
+# TurboKiller v1.3.2
+
+[English](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/en.md) · [简体中文](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/zh-CN.md) · [繁體中文](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/zh-TW.md) · [日本語](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/ja.md) · [한국어](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/ko.md) · [Deutsch](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/de.md) · [Français](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/fr.md) · [Español](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/es.md) · [Português (Brasil)](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/pt-BR.md) · [Português (Portugal)](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/pt-PT.md) · [Italiano](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/it.md) · [Русский](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/ru.md) · [Türkçe](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/tr.md) · [Bahasa Indonesia](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/id.md) · [Tiếng Việt](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/vi.md) · [العربية](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/ar.md) · [עברית](https://github.com/nicotech-studio/turbo-killer/blob/v1.3.2/docs/releases/1.3.2/he.md)
+
+- The update window now shows release notes in the app’s language, including changes from any versions you skipped.
+
+### SHA-256 · TurboKiller.dmg
+
+`99845ad8372979b4a6051c795f0039a314128e105fba0fd1ce2ad67fb21a3b1f`

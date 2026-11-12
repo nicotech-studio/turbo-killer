@@ -2,9 +2,9 @@
 set -euo pipefail
 
 # Local packaging only: never tags, pushes, publishes, installs or loads a Kext.
-# Usage: bash tools/build-release.sh [1.3.1] [build-number]
+# Usage: bash tools/build-release.sh [1.3.2] [build-number]
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-VERSION="${1:-1.3.1}"
+VERSION="${1:-1.3.2}"
 BUILD_NUMBER="${2:-}"
 TEAM_ID="${TEAM_ID:-PPXL64QJ2V}"
 OUTPUT="${RELEASE_OUTPUT_DIR:-$ROOT/.release}"
@@ -58,6 +58,7 @@ ditto "$WORK/TurboKiller.xcarchive/Products/Applications/TurboKiller.app" "$APP"
 [[ "$(lipo -archs "$APP/Contents/MacOS/TurboKiller")" == x86_64 ]]
 [[ "$(lipo -archs "$HELPER")" == x86_64 ]]
 [[ "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$APP/Contents/Info.plist")" == "$VERSION" ]]
+[[ "$(/usr/libexec/PlistBuddy -c 'Print :SUFeedURL' "$APP/Contents/Info.plist")" == "https://turbokiller.nicotech.cc/updates/$VERSION/appcast.xml" ]]
 [[ "$(/usr/libexec/PlistBuddy -c 'Print :LSRequiresNativeExecution' "$APP/Contents/Info.plist")" == true ]]
 if [[ -n "$BUILD_NUMBER" ]]; then
   [[ "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$APP/Contents/Info.plist")" == "$BUILD_NUMBER" ]]
